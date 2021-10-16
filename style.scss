@@ -1,11 +1,13 @@
+@import 'scss/abstract/variables';
+
 * {
     padding: 0;
-    margin: 0;
+    margin: 10px;
     font-family: 'Bebas Neue', cursive;
 }
 
 body {
-    background-color: #2C2A2A;
+    background-color: $color-primary;
 }
 
 .navbar {
@@ -17,20 +19,87 @@ body {
         align-items: center;
 
         >.burger {
-            color: #FEFEE2;
-            margin: 40px;
-            font-size: 20px;
+            color: $color-secondary;
+            margin-right: 70px;
+            font-size: 28px;
             display: inline-block;
             
 
             &:hover {
-                
+                background-color: $color-secondary;
+                color: $color-primary;
+                border-radius: 4px;
+                transition: .2s all;
             }
         }
     }
+
     >hr {
-        color: #FEFEE2;
-        
-        
+        color: #FEFEE2;        
     }
 }
+
+section {
+    display: flex;
+    justify-content: space-between;
+
+        .introduce {
+            display: inline-block;
+            
+
+            article {
+
+                .balisehtml, .balisebody, .baliseh1, .balisep {
+                    font-family: 'Basic', sans-serif;
+                }
+
+                .balisehtml{
+                    margin-left: 10px;
+                }
+
+                .balisebody {
+                    margin-left: 20px;
+                }
+
+
+                p {
+                    color: $color-third;
+                    font-size: 15px;
+                }
+
+                .baliseh1, .balisep, h1, h3 {
+                    margin-left: 40px;
+                }
+
+                h1, h3 {
+                color: $color-secondary;
+                }
+
+                .title {
+                    font-size: 90px;
+                }
+
+                .underTitle {
+                    font-size: 60px;
+                }
+
+                
+
+            }
+        }
+
+        .imageofme {
+
+            p {
+                color: $color-third;
+                font-size: 15px;
+                font-family: 'Basic', sans-serif;
+            }
+
+            .meofimage {
+                width: auto;
+                max-height: 385px;
+                opacity: 0,5;
+            }
+        }
+    }

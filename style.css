@@ -1,6 +1,6 @@
 * {
   padding: 0;
-  margin: 0;
+  margin: 10px;
   font-family: "Bebas Neue", cursive;
 }
 
@@ -16,12 +16,61 @@ body {
 }
 .navbar > ul > .burger {
   color: #FEFEE2;
-  margin: 40px;
-  font-size: 20px;
+  margin-right: 70px;
+  font-size: 28px;
   display: inline-block;
+}
+.navbar > ul > .burger:hover {
+  background-color: #FEFEE2;
+  color: #2C2A2A;
+  border-radius: 4px;
+  transition: 0.2s all;
 }
 .navbar > hr {
   color: #FEFEE2;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+section .introduce {
+  display: inline-block;
+}
+section .introduce article .balisehtml, section .introduce article .balisebody, section .introduce article .baliseh1, section .introduce article .balisep {
+  font-family: "Basic", sans-serif;
+}
+section .introduce article .balisehtml {
+  margin-left: 10px;
+}
+section .introduce article .balisebody {
+  margin-left: 20px;
+}
+section .introduce article p {
+  color: #797474;
+  font-size: 15px;
+}
+section .introduce article .baliseh1, section .introduce article .balisep, section .introduce article h1, section .introduce article h3 {
+  margin-left: 40px;
+}
+section .introduce article h1, section .introduce article h3 {
+  color: #FEFEE2;
+}
+section .introduce article .title {
+  font-size: 90px;
+}
+section .introduce article .underTitle {
+  font-size: 60px;
+}
+section .imageofme p {
+  color: #797474;
+  font-size: 15px;
+  font-family: "Basic", sans-serif;
+}
+section .imageofme .meofimage {
+  width: auto;
+  max-height: 385px;
+  opacity: 0, 5;
 }
 
 /*# sourceMappingURL=style.css.map */
