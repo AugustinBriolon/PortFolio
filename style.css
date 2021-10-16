@@ -1,0 +1,27 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue", cursive;
+}
+
+body {
+  background-color: #2C2A2A;
+}
+
+.navbar > ul {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar > ul > .burger {
+  color: #FEFEE2;
+  margin: 40px;
+  font-size: 20px;
+  display: inline-block;
+}
+.navbar > hr {
+  color: #FEFEE2;
+}
+
+/*# sourceMappingURL=style.css.map */
