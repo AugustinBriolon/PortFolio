@@ -72,5 +72,20 @@ section .imageofme .meofimage {
   max-height: 385px;
   opacity: 0, 5;
 }
+section .imageofme .C2A {
+  background-color: #FBFB7F;
+  width: 223px;
+  height: auto;
+  font-size: 48px;
+  padding: 5px;
+  border-radius: 15px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+section .imageofme .C2A:hover {
+  background-color: #FEFEE1;
+  padding-right: 25px;
+}
 
 /*# sourceMappingURL=style.css.map */
