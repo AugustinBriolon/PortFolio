@@ -1,91 +1,110 @@
 * {
   padding: 0;
   margin: 10px;
-  font-family: "Bebas Neue", cursive;
+  font-family: 'Shree Devanagari 714', Regular;
+  color: #232323;
 }
 
 body {
-  background-color: #2C2A2A;
+  background-color: #F4F2F3;
 }
 
-.navbar > ul {
+.nav_list {
   height: 70px;
+  padding-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.navbar > ul > .burger {
-  color: #FEFEE2;
-  margin-right: 70px;
-  font-size: 28px;
-  display: inline-block;
-}
-.navbar > ul > .burger:hover {
-  background-color: #FEFEE2;
-  color: #2C2A2A;
-  border-radius: 4px;
-  transition: 0.2s all;
-}
-.navbar > hr {
-  color: #FEFEE2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
 }
 
-section {
+.nav_list .page_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
 }
-section .introduce {
+
+.nav_list .nav_list_item_link {
+  font-size: 3.6em;
+  font-weight: normal;
+  color: #232323;
+  text-decoration: none;
+}
+
+.nav_list .nav_list_item_link:hover {
+  text-decoration: underline;
+}
+
+.nav_list .logo {
+  font-size: 5em;
+}
+
+#presentation {
+  padding-top: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#presentation .introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#presentation .introduction .line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(65vmin + 40px);
+}
+
+#presentation .introduction .line .vertical-line {
+  border-left: 2px solid #232323;
   display: inline-block;
+  height: 18em;
+  margin: 0 20px;
 }
-section .introduce article .balisehtml, section .introduce article .balisebody, section .introduce article .baliseh1, section .introduce article .balisep {
-  font-family: "Basic", sans-serif;
+
+#presentation .introduction .line #mycercle {
+  border-radius: 50%;
+  width: 1.2em;
+  height: 1.2em;
+  border: 2px solid #232323;
 }
-section .introduce article .balisehtml {
-  margin-left: 10px;
+
+#presentation .introduction .title {
+  font-size: calc(1vmin + 10px);
 }
-section .introduce article .balisebody {
-  margin-left: 20px;
+
+#presentation .introduction .title h1 {
+  font-size: 6em;
+  font-family: 'Cormorant Garamond', serif;
 }
-section .introduce article p {
-  color: #797474;
-  font-size: 15px;
+
+#presentation .introduction .title .myname {
+  font-size: 1.9em;
 }
-section .introduce article .baliseh1, section .introduce article .balisep, section .introduce article h1, section .introduce article h3 {
-  margin-left: 40px;
+
+#presentation .introduction .title .worklink {
+  font-size: 1.4em;
 }
-section .introduce article h1, section .introduce article h3 {
-  color: #FEFEE2;
-}
-section .introduce article .title {
-  font-size: 90px;
-}
-section .introduce article .underTitle {
-  font-size: 60px;
-}
-section .imageofme p {
-  color: #797474;
-  font-size: 15px;
-  font-family: "Basic", sans-serif;
-}
-section .imageofme .meofimage {
-  width: auto;
-  max-height: 385px;
-  opacity: 0, 5;
-}
-section .imageofme .C2A {
-  background-color: #FBFB7F;
-  width: 223px;
+
+#presentation .faceMe .faceDim {
+  width: 100%;
   height: auto;
-  font-size: 48px;
-  padding: 5px;
-  border-radius: 15px;
-  border: 0;
-  cursor: pointer;
-  transition: 0.5s;
 }
-section .imageofme .C2A:hover {
-  background-color: #FEFEE1;
-  padding-right: 25px;
-}
-
 /*# sourceMappingURL=style.css.map */

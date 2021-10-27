@@ -3,120 +3,92 @@
 * {
     padding: 0;
     margin: 10px;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Shree Devanagari 714', Regular;
+    color: $color-secondary;
 }
 
 body {
     background-color: $color-primary;
 }
 
-.navbar {
+.nav_list {
+    height: 70px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
 
-    >ul {
-        height: 70px;
+    .page_link {
         display: flex;
-        justify-content: flex-end;
-        align-items: center;
+    }
 
-        >.burger {
-            color: $color-secondary;
-            margin-right: 70px;
-            font-size: 28px;
-            display: inline-block;
-            
+    .nav_list_item_link {
+        font-size: 3.6em;
+        font-weight: normal;
+        color: $color-secondary;
+        text-decoration: none;
 
-            &:hover {
-                background-color: $color-secondary;
-                color: $color-primary;
-                border-radius: 4px;
-                transition: .2s all;
-            }
+        &:hover {
+            text-decoration: underline;
         }
     }
 
-    >hr {
-        color: #FEFEE2;        
+    .logo {
+        font-size: 5em;
+    }
+}
+#presentation {
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+
+        .introduction{
+            display: flex;
+
+            .line { 
+                display: flex;
+                flex-direction: column;
+                height: calc(65vmin + 40px);
+
+                .vertical-line{
+                    border-left: 2px solid $color-secondary;
+                    display: inline-block;
+                    height: 18em;
+                    margin: 0 20px;
+                }
+
+                #mycercle {
+                    border-radius:50%;
+                    width:1.2em;
+                    height:1.2em;
+                    border:2px solid $color-secondary; 
+                }
+            }
+
+            .title {
+                font-size: calc(1vmin + 10px);
+
+                h1 {
+                    font-size: 6em;
+                    font-family: 'Cormorant Garamond', serif;
+                }
+
+                .myname {
+                    font-size: 1.9em;
+                }
+                .worklink {
+                    font-size: 1.4em;
+                }
+            }
+        }
+
+    .faceMe {
+        
+        .faceDim {
+            width: 100%;
+            height: auto;
+        }
     }
 }
 
-section {
-    display: flex;
-    justify-content: space-between;
-
-        .introduce {
-            display: inline-block;
-            
-
-            article {
-
-                .balisehtml, .balisebody, .baliseh1, .balisep {
-                    font-family: 'Basic', sans-serif;
-                }
-
-                .balisehtml{
-                    margin-left: 10px;
-                }
-
-                .balisebody {
-                    margin-left: 20px;
-                }
-
-
-                p {
-                    color: $color-third;
-                    font-size: 15px;
-                }
-
-                .baliseh1, .balisep, h1, h3 {
-                    margin-left: 40px;
-                }
-
-                h1, h3 {
-                color: $color-secondary;
-                }
-
-                .title {
-                    font-size: 90px;
-                }
-
-                .underTitle {
-                    font-size: 60px;
-                }
-
-                
-
-            }
-        }
-
-        .imageofme {
-
-            p {
-                color: $color-third;
-                font-size: 15px;
-                font-family: 'Basic', sans-serif;
-            }
-
-            .meofimage {
-                width: auto;
-                max-height: 385px;
-                opacity: 0,5;
-            }
-
-            .C2A {
-                background-color: #FBFB7F;
-                width: 223px;
-                height: auto;
-                font-size: 48px;
-                padding: 5px;
-                border-radius: 15px;
-                border: 0;
-                cursor: pointer;
-                transition: 0.5s;
-
-                &:hover {
-                    background-color: #FEFEE1;
-                    padding-right: 25px;
-                }
-            }
-        }
-    }
