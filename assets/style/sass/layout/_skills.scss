@@ -8,6 +8,14 @@
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         grid-template-rows: 2fr;
         align-items: center;
+        @media screen and (max-width:1000px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+        @media screen and (max-width:600px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
         
         svg {
             fill: $color-secondary;
@@ -15,6 +23,9 @@
             width: auto;
             display: inline-block;
             margin: 0 auto;
+            @media screen and (max-width:1000px) {
+                margin-top: 25px;
+            }
 
             &:hover{
                 transition: 0.3s;
@@ -30,6 +41,25 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 2fr;
+        @media screen and (max-width:1000px) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width:600px) {
+            grid-template-columns: 1fr;
+            margin: 50px 0 0 0;
+        }
+
+        .descrip {
+            @media screen and (max-width:600px) {
+                margin: 50px 0 0 0; 
+            }
+        }
+
+        .aboutme {
+            @media screen and (max-width:500px) {
+                margin-bottom: 50px;
+            }
+        }
         
         h3 {
             font-size: 1.8em;
@@ -41,6 +71,12 @@
             font-size: 1.3em;
             text-align: center;
             padding: 50px 100px 0 100px;
+            @media screen and (max-width:600px) {
+                padding: 0px 25px 25px 25px;
+            }
+            @media screen and (max-width:900px) {
+                padding: 0;
+            }
         }
     }
 }

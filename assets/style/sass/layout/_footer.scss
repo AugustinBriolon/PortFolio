@@ -5,6 +5,19 @@ footer {
     margin: 10% 0 0 6%;    
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width:1000px){
+        margin-top: 150px;
+    }
+    @media screen and (max-width:600px) {
+        margin: 190px 0 0 0 ;
+    }
+
+    .copy {
+        @media screen and (max-width:600px) {
+            font-size: 0.8em;
+        }
+    }
+
 
     .socialsnetwork {
         display: flex;
@@ -14,5 +27,12 @@ footer {
     .socialnetwork {
         text-decoration: none;
         color: $color-third;
+        @media screen and (max-width:600px) {
+            font-size: 0.8em;
+            margin-right: 20px;
+        }
+        @media screen and (max-width:1000px){
+            padding-right: 0px;
+        }
     }
 }

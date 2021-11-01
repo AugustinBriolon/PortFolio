@@ -1,14 +1,6 @@
 // HEADER
 
 
-#barre {
-    height: 5px;
-    position: fixed;
-    z-index: 100;
-    bottom: top;
-    background: var(--blue);
-}
-
 .nav_list {
     height: 70px;
     padding-top: 25px;
@@ -16,10 +8,17 @@
     justify-content: space-between;
     align-items: center;
     list-style-type: none;
+    @media screen and (max-width:600px) {
+        width: auto;
+        height: 100px;
+    }
 
     .page_link {
         display: flex;
         justify-content: space-between;
+        @media screen and (max-width:600px) {
+            flex-direction: column;
+        }
     }
 
     .nav_list_item_link {
@@ -27,9 +26,23 @@
         font-weight: normal;
         color: $color-secondary;
         text-decoration: none;
+        @media screen and (max-width:600px) {
+            font-size: 1.2em;
+        }
+
+        &:hover {
+            color: $color-third;
+            border-bottom: 1px solid $color-third;
+        }
     }
 
     .logo {
         font-size: 5em;
+        font-weight: normal;
+        color: $color-secondary;
+        text-decoration: none;
+        @media screen and (max-width:600px) {
+            font-size: 3em;
+        }
     }
 }

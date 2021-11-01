@@ -5,6 +5,9 @@
     padding-top: 2em;
     display: flex;
     justify-content: flex-start;
+    @media screen and (max-width:600px) {
+        margin-bottom: 50px;
+    }
 
         .introduction{
             display: flex;
@@ -26,6 +29,11 @@
                     width:1.2em;
                     height:1.2em;
                     border:2px solid $color-secondary; 
+                    @media screen and (max-width:600px) {
+                        width: 1em;
+                        height: 2em;
+                        margin: auto;
+                    }
                 }
             }
 
@@ -35,6 +43,15 @@
                 h1 {
                     font-size: 6em;
                     font-family: 'Cormorant Garamond', serif;
+                    @media screen and (max-width:1000px) {
+                        font-size: 5em;
+                    }
+                    @media screen and (max-width:700px) {
+                        font-size: 4em;
+                    }
+                    @media screen and (max-width:400px) {
+                        font-size: 3em;
+                    }
                 }
 
                 .myname {
@@ -46,11 +63,16 @@
             }
         }
 
-    // .faceMe {
+    .faceMe {
+        @media screen and (max-width:1400px) {
+            display: none;
+        }
         
-    //     .faceDim {
-    //         width: 100%;
-    //         height: auto;
-    //     }
-    // }
+        .faceDim {
+            @include size (80% auto);
+            @media screen and (max-width:1400px){
+                display: none;
+            }
+        }
+    }
 }

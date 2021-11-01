@@ -7,16 +7,24 @@
   color: #232323;
 }
 
-body {
-  background-color: #F4F2F3;
+@media screen and (max-width: 600px) {
+  *, *::after, *::after {
+    margin: 2px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
 }
 
-#barre {
-  height: 5px;
-  position: fixed;
-  z-index: 100;
-  bottom: top;
-  background: var(--blue);
+@media screen and (max-width: 1000px) {
+  *, *::after, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+}
+
+body {
+  background-color: #F4F2F3;
+  overflow-x: hidden;
 }
 
 .nav_list {
@@ -34,6 +42,13 @@ body {
   list-style-type: none;
 }
 
+@media screen and (max-width: 600px) {
+  .nav_list {
+    width: auto;
+    height: 100px;
+  }
+}
+
 .nav_list .page_link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -43,6 +58,15 @@ body {
           justify-content: space-between;
 }
 
+@media screen and (max-width: 600px) {
+  .nav_list .page_link {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .nav_list .nav_list_item_link {
   font-size: 2em;
   font-weight: normal;
@@ -50,8 +74,28 @@ body {
   text-decoration: none;
 }
 
+@media screen and (max-width: 600px) {
+  .nav_list .nav_list_item_link {
+    font-size: 1.2em;
+  }
+}
+
+.nav_list .nav_list_item_link:hover {
+  color: #4169E1;
+  border-bottom: 1px solid #4169E1;
+}
+
 .nav_list .logo {
   font-size: 5em;
+  font-weight: normal;
+  color: #232323;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  .nav_list .logo {
+    font-size: 3em;
+  }
 }
 
 #presentation {
@@ -62,6 +106,12 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+@media screen and (max-width: 600px) {
+  #presentation {
+    margin-bottom: 50px;
+  }
 }
 
 #presentation .introduction {
@@ -95,6 +145,14 @@ body {
   border: 2px solid #232323;
 }
 
+@media screen and (max-width: 600px) {
+  #presentation .introduction .line #mycercle {
+    width: 1em;
+    height: 2em;
+    margin: auto;
+  }
+}
+
 #presentation .introduction .title {
   font-size: calc(1vmin + 10px);
 }
@@ -104,12 +162,47 @@ body {
   font-family: 'Cormorant Garamond', serif;
 }
 
+@media screen and (max-width: 1000px) {
+  #presentation .introduction .title h1 {
+    font-size: 5em;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #presentation .introduction .title h1 {
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #presentation .introduction .title h1 {
+    font-size: 3em;
+  }
+}
+
 #presentation .introduction .title .myname {
   font-size: 1.9em;
 }
 
 #presentation .introduction .title .worklink {
   font-size: 1.4em;
+}
+
+@media screen and (max-width: 1400px) {
+  #presentation .faceMe {
+    display: none;
+  }
+}
+
+#presentation .faceMe .faceDim {
+  width: 80%;
+  height: auto;
+}
+
+@media screen and (max-width: 1400px) {
+  #presentation .faceMe .faceDim {
+    display: none;
+  }
 }
 
 #allwork {
@@ -128,12 +221,36 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 1000px) {
+  #allwork .competence {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #allwork .competence {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
 #allwork .competence svg {
   fill: #232323;
   height: 5em;
   width: auto;
   display: inline-block;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1000px) {
+  #allwork .competence svg {
+    margin-top: 25px;
+  }
 }
 
 #allwork .competence svg:hover {
@@ -154,6 +271,33 @@ body {
       grid-template-rows: 2fr;
 }
 
+@media screen and (max-width: 1000px) {
+  #allwork .description {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #allwork .description {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #allwork .description .descrip {
+    margin: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #allwork .description .aboutme {
+    margin-bottom: 50px;
+  }
+}
+
 #allwork .description h3 {
   font-size: 1.8em;
   color: #4169E1;
@@ -164,6 +308,18 @@ body {
   font-size: 1.3em;
   text-align: center;
   padding: 50px 100px 0 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #allwork .description p {
+    padding: 0px 25px 25px 25px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #allwork .description p {
+    padding: 0;
+  }
 }
 
 .formulaire {
@@ -178,6 +334,19 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1000px) {
+  .formulaire form {
+    padding: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .formulaire form {
+    text-align: start;
+    padding: 50px 10px 0 10px;
+  }
+}
+
 .formulaire form .name,
 .formulaire form .lookingFor,
 .formulaire form .email {
@@ -190,6 +359,14 @@ body {
   outline: none;
   font-size: 1em;
   border-style: none none inset none;
+}
+
+@media screen and (max-width: 600px) {
+  .formulaire form .name,
+  .formulaire form .lookingFor,
+  .formulaire form .email {
+    font-size: 0.8em;
+  }
 }
 
 .formulaire form .c2a {
@@ -218,6 +395,20 @@ body {
   cursor: pointer;
 }
 
+@media screen and (max-width: 875px) {
+  .formulaire form .c2a {
+    margin: 50px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .formulaire form .c2a {
+    margin: 30px 0 0 45px;
+    height: 60px;
+    width: 150px;
+  }
+}
+
 .formulaire form .c2a .arrow {
   position: relative;
 }
@@ -230,6 +421,24 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    margin-top: 150px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    margin: 190px 0 0 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  footer .copy {
+    font-size: 0.8em;
+  }
 }
 
 footer .socialsnetwork {
@@ -245,5 +454,18 @@ footer .socialsnetwork {
 footer .socialnetwork {
   text-decoration: none;
   color: #4169E1;
+}
+
+@media screen and (max-width: 600px) {
+  footer .socialnetwork {
+    font-size: 0.8em;
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  footer .socialnetwork {
+    padding-right: 0px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
