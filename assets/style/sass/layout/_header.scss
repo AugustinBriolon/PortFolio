@@ -1,0 +1,31 @@
+// HEADER
+
+
+.nav_list {
+    height: 70px;
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+
+    .page_link {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .nav_list_item_link {
+        font-size: 2em;
+        font-weight: normal;
+        color: $color-secondary;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    // .logo {
+    //     font-size: 5em;
+    // }
+}

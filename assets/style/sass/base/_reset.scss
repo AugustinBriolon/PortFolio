@@ -1,0 +1,14 @@
+// RESET
+
+
+*, *::after, *::after {
+    padding: 0;
+    margin: 10px;
+    font-family: 'Shree Devanagari 714', Regular;
+    color: $color-secondary;
+}
+
+body {
+    // font-size: 62.5%;
+    background-color: $color-primary;
+}

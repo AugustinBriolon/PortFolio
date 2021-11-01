@@ -1,5 +1,4 @@
-@charset "UTF-8";
-* {
+*, *::after, *::after {
   padding: 0;
   margin: 10px;
   font-family: 'Shree Devanagari 714', Regular;
@@ -43,10 +42,6 @@ body {
 
 .nav_list .nav_list_item_link:hover {
   text-decoration: underline;
-}
-
-.nav_list .logo {
-  font-size: 5em;
 }
 
 #presentation {
@@ -105,11 +100,6 @@ body {
 
 #presentation .introduction .title .worklink {
   font-size: 1.4em;
-}
-
-#presentation .faceMe .faceDim {
-  width: 100%;
-  height: auto;
 }
 
 #allwork {
@@ -231,10 +221,4 @@ footer .socialnetwork {
   text-decoration: none;
   color: #4169E1;
 }
-
-@media (max-width: 1400px) {
-  #presentation .faceMe .faceDim  {
-    display: none;
-  }
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */

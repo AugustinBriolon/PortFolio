@@ -1,0 +1,56 @@
+// ME
+
+
+#presentation {
+    padding-top: 2em;
+    display: flex;
+    justify-content: flex-start;
+
+        .introduction{
+            display: flex;
+
+            .line { 
+                display: flex;
+                flex-direction: column;
+                height: calc(65vmin + 40px);
+
+                .vertical-line{
+                    border-left: 2px solid $color-secondary;
+                    display: inline-block;
+                    height: 18em;
+                    margin: 0 20px;
+                }
+
+                #mycercle {
+                    border-radius:50%;
+                    width:1.2em;
+                    height:1.2em;
+                    border:2px solid $color-secondary; 
+                }
+            }
+
+            .title {
+                font-size: calc(1vmin + 10px);
+
+                h1 {
+                    font-size: 6em;
+                    font-family: 'Cormorant Garamond', serif;
+                }
+
+                .myname {
+                    font-size: 1.9em;
+                }
+                .worklink {
+                    font-size: 1.4em;
+                }
+            }
+        }
+
+    // .faceMe {
+        
+    //     .faceDim {
+    //         width: 100%;
+    //         height: auto;
+    //     }
+    // }
+}
