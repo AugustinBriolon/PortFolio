@@ -21,10 +21,11 @@ body {
 
     .page_link {
         display: flex;
+        justify-content: space-between;
     }
 
     .nav_list_item_link {
-        font-size: 3.6em;
+        font-size: 2em;
         font-weight: normal;
         color: $color-secondary;
         text-decoration: none;
@@ -92,3 +93,117 @@ body {
     }
 }
 
+#allwork { 
+    padding-top: 20px;
+    .competence {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 2fr;
+        align-items: center;
+        
+        
+        .code {
+            height: 5em;
+            width: auto;
+            display: inline-block;
+            margin: 0 auto;
+            
+            .html5:hover {
+                fill: red;
+                fill-rule: evenodd;
+            }
+            
+            .css3:hover {
+                color: blue;
+                fill: blue;
+                
+            }
+        }
+            
+    }
+
+    .description {
+        padding: 100px 0 100px 80px;
+        height: 150px;
+        width: 350px;
+
+        .description_word{
+            font-size: 1.8em;
+
+            .color_word{
+                color: $color-third;
+            }
+        }
+    }
+}
+
+.formulaire {
+    height: 250px;
+    width: auto;
+    padding-left: 50px;
+
+    label {
+        font-size: 2em;
+
+        .name,
+        .lookingFor,
+        .email
+        {
+            border-style: none;
+            background-color: $color-primary;
+            height: 2.1em;
+            width: auto;
+            font-size: 1em;
+            border-style: none none inset none;
+        }
+
+        .c2a {
+            height: auto;
+            width: auto;
+            background-color: $color-third;
+            border-style: none;
+            font-size: 0.8em;
+            border-radius: 15px;
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            .arrow {
+                position: relative;
+            }
+        }
+    }
+
+
+}
+
+footer {
+    padding: 10% 5% 0 5%;
+    display: flex;
+    justify-content: space-between;
+
+    .socialsnetwork {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .socialnetwork {
+        text-decoration: none;
+        color: $color-third;
+    }
+}
+
+@media (max-width: 1400px) {
+    
+    #presentation {
+
+        .faceMe {
+            
+            .faceDim {
+                display: none;
+            }
+        }
+    }
+}

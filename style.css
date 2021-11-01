@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 10px;
@@ -28,10 +29,13 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav_list .nav_list_item_link {
-  font-size: 3.6em;
+  font-size: 2em;
   font-weight: normal;
   color: #232323;
   text-decoration: none;
@@ -106,5 +110,131 @@ body {
 #presentation .faceMe .faceDim {
   width: 100%;
   height: auto;
+}
+
+#allwork {
+  padding-top: 20px;
+}
+
+#allwork .competence {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 2fr;
+      grid-template-rows: 2fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#allwork .competence .code {
+  height: 5em;
+  width: auto;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+#allwork .competence .code .html5:hover {
+  fill: red;
+  fill-rule: evenodd;
+}
+
+#allwork .competence .code .css3:hover {
+  color: blue;
+  fill: blue;
+}
+
+#allwork .description {
+  padding: 100px 0 100px 80px;
+  height: 150px;
+  width: 350px;
+}
+
+#allwork .description .description_word {
+  font-size: 1.8em;
+}
+
+#allwork .description .description_word .color_word {
+  color: #4169E1;
+}
+
+.formulaire {
+  height: 250px;
+  width: auto;
+  padding-left: 50px;
+}
+
+.formulaire label {
+  font-size: 2em;
+}
+
+.formulaire label .name,
+.formulaire label .lookingFor,
+.formulaire label .email {
+  border-style: none;
+  background-color: #F4F2F3;
+  height: 2.1em;
+  width: auto;
+  font-size: 1em;
+  border-style: none none inset none;
+}
+
+.formulaire label .c2a {
+  height: auto;
+  width: auto;
+  background-color: #4169E1;
+  border-style: none;
+  font-size: 0.8em;
+  border-radius: 15px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formulaire label .c2a .arrow {
+  position: relative;
+}
+
+footer {
+  padding: 10% 5% 0 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .socialsnetwork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .socialnetwork {
+  text-decoration: none;
+  color: #4169E1;
+}
+
+@media (max-width: 1400px) {
+  #presentation .faceMe .faceDim  {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
