@@ -9,38 +9,38 @@
         grid-template-rows: 2fr;
         align-items: center;
         
-        
-        .code {
+        svg {
+            fill: $color-secondary;
             height: 5em;
             width: auto;
             display: inline-block;
             margin: 0 auto;
-            
-            .html5:hover {
-                fill: red;
-                fill-rule: evenodd;
+
+            &:hover{
+                transition: 0.3s;
+                fill: $color-third;
             }
-            
-            .css3:hover {
-                color: blue;
-                fill: blue;
-                
-            }
-        }
-            
+        }   
     }
 
     .description {
-        padding: 100px 0 100px 80px;
-        height: 150px;
-        width: 350px;
-
-        .description_word{
+        margin: 100px 0 100px 0;
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 2fr;
+        
+        h3 {
             font-size: 1.8em;
+            color: $color-third;
+            text-align: center;
+        }
 
-            .color_word{
-                color: $color-third;
-            }
+        p {
+            font-size: 1.3em;
+            text-align: center;
+            padding: 50px 100px 0 100px;
         }
     }
 }

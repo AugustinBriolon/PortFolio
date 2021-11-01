@@ -1,6 +1,14 @@
 // HEADER
 
 
+#barre {
+    height: 5px;
+    position: fixed;
+    z-index: 100;
+    bottom: top;
+    background: var(--blue);
+}
+
 .nav_list {
     height: 70px;
     padding-top: 25px;
@@ -19,13 +27,9 @@
         font-weight: normal;
         color: $color-secondary;
         text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
     }
 
-    // .logo {
-    //     font-size: 5em;
-    // }
+    .logo {
+        font-size: 5em;
+    }
 }

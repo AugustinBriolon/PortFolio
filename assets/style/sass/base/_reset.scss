@@ -4,6 +4,7 @@
 *, *::after, *::after {
     padding: 0;
     margin: 10px;
+    box-sizing: border-box;
     font-family: 'Shree Devanagari 714', Regular;
     color: $color-secondary;
 }
