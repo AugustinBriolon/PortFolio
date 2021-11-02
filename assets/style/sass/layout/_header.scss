@@ -7,16 +7,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    list-style-type: none;
     @media screen and (max-width:600px) {
         width: auto;
         height: 100px;
     }
 
     .page_link {
+        list-style-type: none;
         display: flex;
         justify-content: space-between;
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:700px) {
             flex-direction: column;
         }
     }
@@ -42,7 +42,10 @@
         color: $color-secondary;
         text-decoration: none;
         @media screen and (max-width:600px) {
-            font-size: 3em;
+            font-size: 4em;
+        }
+        @media screen and (max-width:700px) {
+            font-size: 4.5em;
         }
     }
 }

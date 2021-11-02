@@ -1,24 +1,20 @@
+@charset "UTF-8";
 *, *::after, *::after {
   padding: 0;
   margin: 10px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: 'Shree Devanagari 714', Regular;
+  box-sizing: border-box;
+  font-family: "Shree Devanagari 714", Regular;
   color: #232323;
 }
-
 @media screen and (max-width: 600px) {
   *, *::after, *::after {
     margin: 2px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
-
 @media screen and (max-width: 1000px) {
   *, *::after, *::after {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
   }
 }
 
@@ -30,121 +26,88 @@ body {
 .nav_list {
   height: 70px;
   padding-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
 }
-
 @media screen and (max-width: 600px) {
   .nav_list {
     width: auto;
     height: 100px;
   }
 }
-
 .nav_list .page_link {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  list-style-type: none;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav_list .page_link {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 .nav_list .nav_list_item_link {
   font-size: 2em;
   font-weight: normal;
   color: #232323;
   text-decoration: none;
 }
-
 @media screen and (max-width: 600px) {
   .nav_list .nav_list_item_link {
     font-size: 1.2em;
   }
 }
-
 .nav_list .nav_list_item_link:hover {
   color: #4169E1;
   border-bottom: 1px solid #4169E1;
 }
-
 .nav_list .logo {
   font-size: 5em;
   font-weight: normal;
   color: #232323;
   text-decoration: none;
 }
-
 @media screen and (max-width: 600px) {
   .nav_list .logo {
-    font-size: 3em;
+    font-size: 4em;
+  }
+}
+@media screen and (max-width: 700px) {
+  .nav_list .logo {
+    font-size: 4.5em;
   }
 }
 
 #presentation {
   padding-top: 2em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  justify-content: flex-start;
 }
-
 @media screen and (max-width: 600px) {
   #presentation {
     margin-bottom: 50px;
   }
 }
-
 #presentation .introduction {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 #presentation .introduction .line {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   height: calc(65vmin + 40px);
 }
-
 #presentation .introduction .line .vertical-line {
   border-left: 2px solid #232323;
   display: inline-block;
   height: 18em;
   margin: 0 20px;
 }
-
 #presentation .introduction .line #mycercle {
   border-radius: 50%;
   width: 1.2em;
   height: 1.2em;
   border: 2px solid #232323;
 }
-
 @media screen and (max-width: 600px) {
   #presentation .introduction .line #mycercle {
     width: 1em;
@@ -152,53 +115,43 @@ body {
     margin: auto;
   }
 }
-
 #presentation .introduction .title {
   font-size: calc(1vmin + 10px);
 }
-
 #presentation .introduction .title h1 {
   font-size: 6em;
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
-
 @media screen and (max-width: 1000px) {
   #presentation .introduction .title h1 {
     font-size: 5em;
   }
 }
-
 @media screen and (max-width: 700px) {
   #presentation .introduction .title h1 {
     font-size: 4em;
   }
 }
-
 @media screen and (max-width: 400px) {
   #presentation .introduction .title h1 {
     font-size: 3em;
   }
 }
-
 #presentation .introduction .title .myname {
   font-size: 1.9em;
 }
-
 #presentation .introduction .title .worklink {
   font-size: 1.4em;
 }
-
 @media screen and (max-width: 1400px) {
   #presentation .faceMe {
     display: none;
   }
 }
-
 #presentation .faceMe .faceDim {
   width: 80%;
   height: auto;
 }
-
 @media screen and (max-width: 1400px) {
   #presentation .faceMe .faceDim {
     display: none;
@@ -208,37 +161,24 @@ body {
 #allwork {
   padding-top: 20px;
 }
-
 #allwork .competence {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-rows: 2fr;
-      grid-template-rows: 2fr;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr;
+  align-items: center;
 }
-
 @media screen and (max-width: 1000px) {
   #allwork .competence {
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
-
 @media screen and (max-width: 600px) {
   #allwork .competence {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
-
 #allwork .competence svg {
   fill: #232323;
   height: 5em;
@@ -246,80 +186,87 @@ body {
   display: inline-block;
   margin: 0 auto;
 }
-
 @media screen and (max-width: 1000px) {
   #allwork .competence svg {
     margin-top: 25px;
   }
 }
-
 #allwork .competence svg:hover {
-  -webkit-transition: 0.3s;
   transition: 0.3s;
   fill: #4169E1;
 }
-
 #allwork .description {
   margin: 100px 0 100px 0;
   height: auto;
   width: auto;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  -ms-grid-rows: 2fr;
-      grid-template-rows: 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 2fr;
 }
-
 @media screen and (max-width: 1000px) {
   #allwork .description {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 }
-
 @media screen and (max-width: 600px) {
   #allwork .description {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     margin: 50px 0 0 0;
   }
 }
-
 @media screen and (max-width: 600px) {
   #allwork .description .descrip {
     margin: 50px 0 0 0;
   }
 }
-
 @media screen and (max-width: 500px) {
   #allwork .description .aboutme {
     margin-bottom: 50px;
   }
 }
-
 #allwork .description h3 {
   font-size: 1.8em;
   color: #4169E1;
   text-align: center;
 }
-
 #allwork .description p {
   font-size: 1.3em;
   text-align: center;
   padding: 50px 100px 0 100px;
 }
-
 @media screen and (max-width: 600px) {
   #allwork .description p {
     padding: 0px 25px 25px 25px;
   }
 }
-
 @media screen and (max-width: 900px) {
   #allwork .description p {
     padding: 0;
   }
+}
+
+.projects .project_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.projects .project_container .project_items {
+  margin: 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.projects .project_container .project_items img {
+  width: 100%;
+}
+.projects .project_container .project_items a {
+  margin: 20px 0;
+}
+.projects .project_container .project_items p  {
+  text-align: center;
 }
 
 .formulaire {
@@ -327,48 +274,40 @@ body {
   width: auto;
   padding-left: 50px;
 }
-
 .formulaire form {
   padding-top: 50px;
   font-size: 1.5em;
   text-align: center;
 }
-
 @media screen and (max-width: 1000px) {
   .formulaire form {
     padding: 50px 0 0 0;
   }
 }
-
 @media screen and (max-width: 600px) {
   .formulaire form {
     text-align: start;
     padding: 50px 10px 0 10px;
   }
 }
-
 .formulaire form .name,
 .formulaire form .lookingFor,
 .formulaire form .email {
   border-style: none;
   background-color: #F4F2F3;
   height: 2.1em;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   outline: none;
   font-size: 1em;
   border-style: none none inset none;
 }
-
 @media screen and (max-width: 600px) {
   .formulaire form .name,
-  .formulaire form .lookingFor,
-  .formulaire form .email {
+.formulaire form .lookingFor,
+.formulaire form .email {
     font-size: 0.8em;
   }
 }
-
 .formulaire form .c2a {
   margin-left: 150px;
   margin-top: 50px;
@@ -379,28 +318,17 @@ body {
   font-size: 0.8em;
   border-radius: 15px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   cursor: pointer;
 }
-
 @media screen and (max-width: 875px) {
   .formulaire form .c2a {
     margin: 50px 0 0 0;
   }
 }
-
 @media screen and (max-width: 600px) {
   .formulaire form .c2a {
     margin: 30px 0 0 45px;
@@ -408,64 +336,48 @@ body {
     width: 150px;
   }
 }
-
 .formulaire form .c2a .arrow {
   position: relative;
 }
 
 footer {
   margin: 10% 0 0 6%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 @media screen and (max-width: 1000px) {
   footer {
     margin-top: 150px;
   }
 }
-
 @media screen and (max-width: 600px) {
   footer {
     margin: 190px 0 0 0;
   }
 }
-
 @media screen and (max-width: 600px) {
   footer .copy {
     font-size: 0.8em;
   }
 }
-
 footer .socialsnetwork {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
-
 footer .socialnetwork {
   text-decoration: none;
-  color: #4169E1;
+  color: #1A3CA3;
 }
-
 @media screen and (max-width: 600px) {
   footer .socialnetwork {
     font-size: 0.8em;
     margin-right: 20px;
   }
 }
-
 @media screen and (max-width: 1000px) {
   footer .socialnetwork {
     padding-right: 0px;
   }
 }
+
 /*# sourceMappingURL=main.css.map */

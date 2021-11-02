@@ -69,7 +69,8 @@
         }
         
         .faceDim {
-            @include size (80% auto);
+            width: 80%;
+            height: auto;
             @media screen and (max-width:1400px){
                 display: none;
             }

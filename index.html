@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Author: Augustin Briolon, Page: PortFolio">
     <link rel="icon" href="assets/img/logo/AB.png" type="image/png">
-    <link rel="stylesheet" href="assets/style/sass/main.css">
+    <link rel="stylesheet" href="assets/style/css/main.css">
     <title>PortFolio - AB</title>
 </head>
 <body>
 
     <header>
-        <ul class="nav_list">
-            <li class="nav_list_item">
+        <nav class="nav_list">
+            <div class="nav_list_item">
                 <a href="#" class="nav_list_item logo">{AB}</a>
-            </li>
-            <nav class="page_link">
+            </div>
+            <ul class="page_link">
                 <li class="nav_list_item">
                     <a href="#allwork" class="nav_list_item_link">works</a>
                 </li>
                 <li class="nav_list_item">
+                    <a href="#projectt" class="nav_list_item_link">projects</a>
+                </li>
+                <li class="nav_list_item">
                     <a href="#abouttt" class="nav_list_item_link">about</a>
                 </li>
-            </nav>
-        </ul>
+            </ul>
+        </nav>
     </header>
 
     <div id="presentation">
@@ -40,7 +44,7 @@
             </section> 
         </div>
         <aside class="faceMe">
-            <img src="/assets/img/visage/visage cou2.png" class="faceDim">
+            <img src="/assets/img/visage/visage cou2.png" class="faceDim" alt="visageLgo">
         </aside>
     </div>
 
@@ -85,37 +89,57 @@
         </div>
     </div>
 
+    <hr id="projectt">
+    
+    <section class="projects">
+
+        <h2>Projets :</h2>
+
+        <div class="project_container">
+            
+            <div class="project_items">
+                <h4>Fondation Louis Vuitton</h4>
+                <a href="https://fondation-louis-vuitton.herokuapp.com/" target="blank"><img src="./assets/img/images/BATFLV5.jpeg" alt="Fondation Louis Vuitton"></a>
+                <p>Site créé afin de validé mon année scolaire. </p>
+            </div>
+            
+        </div>
+    </section>
+
     <hr id="abouttt">
 
     <div class="formulaire">
-            <form>
-                Hey my name is 
-                    <input type="text" name="name" class="name" maxlength="20">
-                and I'm looking for 
-                    <select name="lookingFor" class="lookingFor">
-                        <option value="#"></option>
-                        <option value="design">Web design</option>
-                        <option value="site">Web Site</option>
-                        <option value="other">Other</option>
-                    </select>
-                . Get in touch with me at :
-                    <input type="email" name="email" class="email" maxlength="50">
-                !
-                <br>
-                <button class="c2a">
-                    <p>Send Enquiry</p> 
-                    <svg class="arrow" width="66" height="25" viewBox="0 0 66 25"  xmlns="http://www.w3.org/2000/svg"><path d="M65 12.5L50.7778 1M65 12.5H1H65ZM65 12.5L50.7778 24L65 12.5Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </form>
+        <form title="Contact's Form">
+            Hey my name is 
+                <input id="name" type="text" name="name" class="name" maxlength="20">
+                <label for="name">Tape your Name</label>
+            and I'm looking for 
+                <select name="lookingFor" class="lookingFor">
+                    <option value="#"></option>
+                    <option value="design">Web design</option>
+                    <option value="site">Web Site</option>
+                    <option value="other">Other</option>
+                </select>
+            . Get in touch with me at :
+                <input id="email" type="email" name="email" class="email" maxlength="50">
+                <label for="email">Tape your Email</label>
+
+            !
+            <br>
+            <button class="c2a">
+                <p>Send Enquiry</p> 
+                <svg class="arrow" width="66" height="25" viewBox="0 0 66 25"  xmlns="http://www.w3.org/2000/svg"><path d="M65 12.5L50.7778 1M65 12.5H1H65ZM65 12.5L50.7778 24L65 12.5Z" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </form>
     </div>
     <footer>
         <div class="copy">
             <p>© COPYRIGHT<span class="copyright"></span> - TOUS DROITS RÉSERVÉS</p>
         </div>
         <nav class="socialsnetwork">
-            <a href="https://github.com/AugustinBriolon" target="_blank" class="socialnetwork">GitHub</a>
-            <a href="https://www.linkedin.com/in/augustin-briolon-16831a1bb/" target="_blank" class="socialnetwork">LinkedIn</a>
+            <a href="https://github.com/AugustinBriolon" target="_blank" rel="noopener" class="socialnetwork">GitHub</a>
+            <a href="https://www.linkedin.com/in/augustin-briolon-16831a1bb/" target="_blank" rel="noopener" class="socialnetwork">LinkedIn</a>
         </nav>
     </footer>
     <script src="assets/script/script.js"></script>        
