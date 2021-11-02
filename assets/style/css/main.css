@@ -3,7 +3,7 @@
   margin: 10px;
   box-sizing: border-box;
   color: #232323;
-  font-family: "Shree Devanagari 714", normal;
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 @media screen and (max-width: 600px) {
   *, *::after, *::after {
@@ -22,12 +22,6 @@ body {
   overflow-x: hidden;
 }
 
-@font-face {
-  font-family: "Shree Devanagari 714";
-  src: url("/assets/font/Shree Devanagari 714.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
 .nav_list {
   height: 70px;
   padding-top: 25px;

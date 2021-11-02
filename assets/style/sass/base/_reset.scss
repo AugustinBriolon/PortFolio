@@ -6,8 +6,8 @@
     margin: 10px;
     box-sizing: border-box;
     color: $color-secondary;
-    font-family: 'Shree Devanagari 714', normal;
-    @media screen and (max-width:600px) {
+    font-family: 'Zen Kaku Gothic Antique', sans-serif;
+        @media screen and (max-width:600px) {
         margin: 2px;
         box-sizing: border-box;
     }
@@ -22,10 +22,4 @@ body {
     overflow-x: hidden;
 }
 
-@font-face {
-    font-family: "Shree Devanagari 714";
-    src: url("/assets/font/Shree\ Devanagari\ 714.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
 
