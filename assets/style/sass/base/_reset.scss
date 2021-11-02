@@ -5,8 +5,9 @@
     padding: 0;
     margin: 10px;
     box-sizing: border-box;
-    font-family: 'Shree Devanagari 714', Regular;
     color: $color-secondary;
+    font-family: 'Shree Devanagari 714', Regular;
+    @import url(//db.onlinewebfonts.com/c/d02befc8fdd8e5315fb21fa7f38fd55a?family=Shree+Devanagari+714);
     @media screen and (max-width:600px) {
         margin: 2px;
         box-sizing: border-box;
@@ -21,3 +22,4 @@ body {
     background-color: $color-primary;
     overflow-x: hidden;
 }
+

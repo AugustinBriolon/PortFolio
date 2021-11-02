@@ -2,8 +2,9 @@
   padding: 0;
   margin: 10px;
   box-sizing: border-box;
-  font-family: "Shree Devanagari 714", Regular;
   color: #232323;
+  font-family: "Shree Devanagari 714", Regular;
+  @import url(//db.onlinewebfonts.com/c/d02befc8fdd8e5315fb21fa7f38fd55a?family=Shree+Devanagari+714);
 }
 @media screen and (max-width: 600px) {
   *, *::after, *::after {
@@ -43,6 +44,7 @@ body {
 @media screen and (max-width: 700px) {
   .nav_list .page_link {
     flex-direction: column;
+    padding-top: 15px;
   }
 }
 .nav_list .nav_list_item_link {
