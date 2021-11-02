@@ -2,25 +2,49 @@
 
 
 .projects {
+    height: 500px;
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    @media screen and (max-width:600px) {
+        grid-template-columns: 1fr;
+    }
+
+
+    .titleproject {
+        font-size: 1.8em;
+        color: $color-third;
+        @media screen and (max-width:600px) {
+            text-align: center; 
+        }
+    }
 
     .project_container {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
         width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @media screen and (max-width:600px) {
+            grid-column: 1 / 2; 
+        }
         .project_items {
             margin: 20px;
             @include size (300px, 300px);
             display: flex;
             flex-direction: column;
             align-items: center;
-            img {
+            .imgFLV {
                 width: 100%;
+                height: auto;
             }
             a {
-                margin: 20px 0;
+                margin: 5px 0;
             }
-            p {
+            .descriptionImg{
                 text-align: center;
             }
         }
