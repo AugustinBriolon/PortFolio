@@ -300,6 +300,11 @@ body {
   width: auto;
   padding-left: 50px;
 }
+@media screen and (max-width: 600px) {
+  .formulaire {
+    padding-left: 25px;
+  }
+}
 .formulaire form {
   padding-top: 50px;
   font-size: 1.5em;
@@ -313,7 +318,7 @@ body {
 @media screen and (max-width: 600px) {
   .formulaire form {
     text-align: start;
-    padding: 50px 10px 0 10px;
+    margin: 50px 10px 0 10px;
   }
 }
 .formulaire form .name,
