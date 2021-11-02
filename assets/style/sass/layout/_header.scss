@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @media screen and (max-width:600px) {
+    @media screen and (max-width:700px) {
         width: auto;
         height: 100px;
     }
@@ -19,6 +19,7 @@
         @media screen and (max-width:700px) {
             flex-direction: column;
             padding-top: 15px;
+            justify-content: center;
         }
     }
 
@@ -27,7 +28,7 @@
         font-weight: normal;
         color: $color-secondary;
         text-decoration: none;
-        @media screen and (max-width:600px) {
+        @media screen and (max-width:700px) {
             font-size: 1.2em;
         }
 
@@ -42,11 +43,8 @@
         font-weight: normal;
         color: $color-secondary;
         text-decoration: none;
-        @media screen and (max-width:600px) {
-            font-size: 4em;
-        }
         @media screen and (max-width:700px) {
-            font-size: 4.5em;
+            font-size: 4em;
         }
     }
 }

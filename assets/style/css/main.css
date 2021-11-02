@@ -3,8 +3,7 @@
   margin: 10px;
   box-sizing: border-box;
   color: #232323;
-  font-family: "Shree Devanagari 714", Regular;
-  @import url(//db.onlinewebfonts.com/c/d02befc8fdd8e5315fb21fa7f38fd55a?family=Shree+Devanagari+714);
+  font-family: "Shree Devanagari 714", normal;
 }
 @media screen and (max-width: 600px) {
   *, *::after, *::after {
@@ -23,6 +22,12 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Shree Devanagari 714";
+  src: url("/assets/font/Shree Devanagari 714.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .nav_list {
   height: 70px;
   padding-top: 25px;
@@ -30,7 +35,7 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav_list {
     width: auto;
     height: 100px;
@@ -45,6 +50,7 @@ body {
   .nav_list .page_link {
     flex-direction: column;
     padding-top: 15px;
+    justify-content: center;
   }
 }
 .nav_list .nav_list_item_link {
@@ -53,7 +59,7 @@ body {
   color: #232323;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .nav_list .nav_list_item_link {
     font-size: 1.2em;
   }
@@ -68,14 +74,9 @@ body {
   color: #232323;
   text-decoration: none;
 }
-@media screen and (max-width: 600px) {
-  .nav_list .logo {
-    font-size: 4em;
-  }
-}
 @media screen and (max-width: 700px) {
   .nav_list .logo {
-    font-size: 4.5em;
+    font-size: 4em;
   }
 }
 
@@ -128,7 +129,7 @@ body {
     font-size: 5em;
   }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
   #presentation .introduction .title h1 {
     font-size: 4em;
   }
