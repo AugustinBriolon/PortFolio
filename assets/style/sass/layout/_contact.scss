@@ -2,17 +2,28 @@
 
 
 .formulaire {
-    height: 250px;
+    height: 450px;
     width: auto;
     padding-left: 50px;
+    display: flex;
+    justify-content: center;
     @media screen and (max-width:600px) {
-        padding-left: 25px;
+        padding-left: 18px;
+        height: 300px;
     }
 
     form{
-        padding-top: 50px;
+        width: 700px;
+        padding-top: 180px;
         font-size: 1.5em;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        @media screen and (max-width:1200px) {
+            flex-direction: column;
+        }
         @media screen and (max-width:1000px) {
             padding: 50px 0 0 0;
         }
@@ -21,7 +32,7 @@
             margin: 50px 10px 0 10px;
         }
 
-        
+
         .name,
         .lookingFor,
         .email
@@ -37,39 +48,43 @@
                 font-size: 0.8em;
             }
         }
-        
-        
-        
+
+
+
         .c2a {
-            margin-left: 150px;
-            margin-top: 50px;
+            font-size: 1.1em;
             height: auto;
             width: auto;
-            color: $color-primary;
-            background-color: black;
-            border-style: none;
-            font-size: 0.8em;
-            border-radius: 15px;
-            position: absolute;
+            cursor: pointer;
+            text-align: center;
+            background-color: transparent;
+            color: $color-secondary;
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            padding-left: 5px;
-
+            padding: 0 5px 0 5px;
+            border: 1px solid;
+            border-radius: 0px;
+            border-color: $color-third;
+            padding: 0 5px 0 5px ;
+            margin: 20px 0 35px 0;
+            @media screen and (max-width:600px) {
+                margin: 20px 0 15px 0;
+            }
             @media screen and (max-width:875px) {
                 margin: 50px 0 0 0;
             }
-            @media screen and (max-width:600px) {
-                margin: 30px 0 0 45px;
-                height: 60px;
-                width: 150px;
-            }
 
+                &:hover {
+                    background-color: $color-third;
+                    color: $color-primary;
+                    transition: all 0.5s;
+                }
             
-            .arrow {
-                position: relative;
+            svg{                
+                &:hover {
+                    fill: $color-primary;
+                    transition: all 0.5s;
+                }
             }
         }
     }

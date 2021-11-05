@@ -3,6 +3,7 @@
   margin: 10px;
   box-sizing: border-box;
   color: #232323;
+  scroll-behavior: smooth;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 @media screen and (max-width: 600px) {
@@ -133,6 +134,11 @@ body {
     font-size: 3em;
   }
 }
+@media screen and (max-width: 320px) {
+  #presentation .introduction .title h1 {
+    font-size: 2.7em;
+  }
+}
 #presentation .introduction .title .myname {
   font-size: 1.9em;
 }
@@ -199,7 +205,7 @@ body {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 2fr;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1170px) {
   #allwork .description {
     grid-template-columns: 1fr 1fr;
   }
@@ -241,26 +247,48 @@ body {
   }
 }
 
+#projectt {
+  margin: 50px 0 50px 0;
+}
+
 .projects {
   height: 500px;
   width: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .projects {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 @media screen and (max-width: 600px) {
   .projects {
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
 .projects .titleproject {
+  grid-column: 2/3;
+  grid-row: 1/2;
   font-size: 1.8em;
   color: #4169E1;
 }
 @media screen and (max-width: 600px) {
   .projects .titleproject {
     text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects .titleproject {
+    grid-column: 1/2;
   }
 }
 .projects .project_container {
@@ -271,13 +299,13 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .projects .project_container {
     grid-column: 1/2;
   }
 }
 .projects .project_container .project_items {
-  margin: 20px;
+  margin: 20px 0 0 0;
   width: 300px;
   height: 300px;
   display: flex;
@@ -294,21 +322,140 @@ body {
 .projects .project_container .project_items .descriptionImg {
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .projects .project_container .project_items {
+    width: 300px;
+    height: 250px;
+  }
+}
+.projects .cv {
+  grid-column: 5/6;
+  grid-row: 1/2;
+  color: #4169E1;
+  font-size: 1.8em;
+}
+@media screen and (max-width: 1100px) {
+  .projects .cv {
+    grid-column: 3/4;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects .cv {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects .cv {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+  }
+}
+.projects .cv_container {
+  grid-column: 5/6;
+  grid-row: 2/3;
+}
+@media screen and (max-width: 1100px) {
+  .projects .cv_container {
+    grid-column: 3/4;
+  }
+}
+@media screen and (max-width: 800px) {
+  .projects .cv_container {
+    grid-column: 2/3;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects .cv_container {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    text-align: center;
+  }
+}
+.projects .cv_container .txt_cv {
+  font-size: 1.3em;
+}
+.projects .cv_container .cv_button {
+  font-size: 1.1em;
+  height: auto;
+  width: auto;
+  cursor: pointer;
+  background-color: transparent;
+  color: #232323;
+  padding: 0 5px 0 5px;
+  border: 1px solid;
+  border-radius: 0px;
+  border-color: #4169E1;
+  padding: 6px 5px 6px 5px;
+  margin: 20px 0 35px 0;
+}
+@media screen and (max-width: 600px) {
+  .projects .cv_container .cv_button {
+    margin: 20px 0 15px 0;
+  }
+}
+.projects .cv_container .cv_button:hover {
+  background-color: #4169E1;
+  color: #F4F2F3;
+  transition: all 0.5s;
+}
+
+#abouttt {
+  margin: 50px 0 50px 0;
+}
+@media screen and (max-width: 1320px) {
+  #abouttt {
+    margin: 100px 0 15px 0;
+  }
+}
+@media screen and (max-width: 1130px) {
+  #abouttt {
+    margin: 240px 0 15px 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  #abouttt {
+    margin: 40px 0 15px 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  #abouttt {
+    margin: 80px 0 15px 0;
+  }
+}
+@media screen and (max-width: 512px) {
+  #abouttt {
+    margin: 110px 0 35px 0;
+  }
+}
 
 .formulaire {
-  height: 250px;
+  height: 450px;
   width: auto;
   padding-left: 50px;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (max-width: 600px) {
   .formulaire {
-    padding-left: 25px;
+    padding-left: 18px;
+    height: 300px;
   }
 }
 .formulaire form {
-  padding-top: 50px;
+  width: 700px;
+  padding-top: 180px;
   font-size: 1.5em;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1200px) {
+  .formulaire form {
+    flex-direction: column;
+  }
 }
 @media screen and (max-width: 1000px) {
   .formulaire form {
@@ -340,37 +487,40 @@ body {
   }
 }
 .formulaire form .c2a {
-  margin-left: 150px;
-  margin-top: 50px;
+  font-size: 1.1em;
   height: auto;
   width: auto;
-  color: #F4F2F3;
-  background-color: black;
-  border-style: none;
-  font-size: 0.8em;
-  border-radius: 15px;
-  position: absolute;
+  cursor: pointer;
+  text-align: center;
+  background-color: transparent;
+  color: #232323;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  padding-left: 5px;
+  padding: 0 5px 0 5px;
+  border: 1px solid;
+  border-radius: 0px;
+  border-color: #4169E1;
+  padding: 0 5px 0 5px;
+  margin: 20px 0 35px 0;
+}
+@media screen and (max-width: 600px) {
+  .formulaire form .c2a {
+    margin: 20px 0 15px 0;
+  }
 }
 @media screen and (max-width: 875px) {
   .formulaire form .c2a {
     margin: 50px 0 0 0;
   }
 }
-@media screen and (max-width: 600px) {
-  .formulaire form .c2a {
-    margin: 30px 0 0 45px;
-    height: 60px;
-    width: 150px;
-  }
+.formulaire form .c2a:hover {
+  background-color: #4169E1;
+  color: #F4F2F3;
+  transition: all 0.5s;
 }
-.formulaire form .c2a .arrow {
-  position: relative;
+.formulaire form .c2a svg:hover {
+  fill: #F4F2F3;
+  transition: all 0.5s;
 }
 
 footer {
@@ -378,7 +528,7 @@ footer {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
   footer {
     margin-top: 150px;
   }
