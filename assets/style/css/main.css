@@ -226,7 +226,7 @@ body {
     margin-bottom: 50px;
   }
 }
-#allwork .description h3 {
+#allwork .description h2 {
   font-size: 1.8em;
   color: #4169E1;
   text-align: center;
@@ -281,14 +281,19 @@ body {
   font-size: 1.8em;
   color: #4169E1;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .projects .titleproject {
-    text-align: center;
+    grid-column: 1/2;
   }
 }
 @media screen and (max-width: 800px) {
   .projects .titleproject {
     grid-column: 1/2;
+  }
+}
+@media screen and (max-width: 600px) {
+  .projects .titleproject {
+    text-align: center;
   }
 }
 .projects .project_container {
@@ -298,6 +303,11 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1100px) {
+  .projects .project_container {
+    grid-column: 1/2;
+  }
 }
 @media screen and (max-width: 800px) {
   .projects .project_container {
@@ -327,6 +337,9 @@ body {
     width: 300px;
     height: 250px;
   }
+}
+.projects .project_container .project_items .projetc_title {
+  font-size: 1.3em;
 }
 .projects .cv {
   grid-column: 5/6;

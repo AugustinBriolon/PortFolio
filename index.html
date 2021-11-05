@@ -80,19 +80,19 @@
         </section>
         <div class="description">
             <section class="codes descrip">
-                <h3>Codes</h3>
+                <h2>Codes</h2>
                 <p>
                     I've started to learn Web development since 2019. Today I use differents languages and master differents skills. I can create an entiere site using FlexBox, Grid, CSS and JavaScript Animation and plug everything on the Web.
                 </p>
             </section>
             <section class="ui/ux descrip">
-                <h3>UI & UX</h3>
+                <h2>UI & UX</h2>
                 <p>
                     Design and architecture are two elements very important for me. They represent sensitive point for me as a Web developper. I use sofware like Figma and Adobe XD to test and improve my UX and UI level.
                 </p>
             </section>
             <section class="aboutme descrip">
-                <h3>About Me</h3>
+                <h2>About Me</h2>
                 <p>
                     I'm a Web developper junior with great ambitions. I started to learn with <a href="https://openclassrooms.com" class="openclassrooms" target="blank" rel="noopener">OpenClassrooms.</a>My learning grow up day by day and I get some new experience every project I make.
                 </p>
@@ -109,7 +109,7 @@
         <div class="project_container">
             
             <div class="project_items">
-                <h4>Fondation Louis Vuitton</h4>
+                <p class="projetc_title">Fondation Louis Vuitton</p>
                 <a href="https://fondation-louis-vuitton.herokuapp.com/" target="blank" rel="noopener"><img src="./assets/img/images/LogoFVL.png" class="imgFLV"  alt="Fondation Louis Vuitton" title="Fondation Louis Vuitton"></a>
                 <p class="descriptionImg">Site I created to validate my school year. </p>
             </div>
@@ -123,7 +123,7 @@
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate pariatur totam omnis eius aperiam excepturi dignissimos rem similique maiores corporis.
             </p>
             
-            <a href="./assets/pdf/CV-Augustin-Briolon.pdf" download="CV_AugustinBriolon.pdf"><button class="cv_button">Télécharger mon CV</button></a>
+            <a href="./assets/pdf/CV-Augustin-Briolon.pdf" target="blank"><button class="cv_button">Télécharger mon CV</button></a>
         </div>
 
 
@@ -133,9 +133,9 @@
 
     <div class="formulaire">
         <form title="Contact's Form">
-            Hey my name is 
+            Hey my name 
+                <label for="name">is</label>
                 <input id="name" type="text" name="name" class="name" maxlength="20">
-                <label for="name">Tape your Name</label>
             and I'm looking for 
                 <select name="lookingFor" class="lookingFor">
                     <option value="#"></option>
@@ -143,11 +143,9 @@
                     <option value="site">Web Site.</option>
                     <option value="other">Other.</option>
                 </select>
-            Get in touch with me at :
+            Get in touch with me
+                <label for="email">at :</label>
                 <input id="email" type="email" name="email" class="email" maxlength="50">
-                <label for="email">Tape your Email</label>
-
-            !
             <br>
             <button class="c2a">
                 Send Enquiry

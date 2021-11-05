@@ -25,11 +25,14 @@
         grid-row: 1 / 2;
         font-size: 1.8em;
         color: $color-third;
-        @media screen and (max-width:600px) {
-            text-align: center; 
+        @media screen and (max-width:1100px) {
+            grid-column: 1 / 2;
         }
         @media screen and (max-width:800px) {
             grid-column: 1 / 2;
+        }
+        @media screen and (max-width:600px) {
+            text-align: center; 
         }
     }
 
@@ -40,6 +43,9 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        @media screen and (max-width:1100px) {
+            grid-column: 1 / 2;
+        }
         @media screen and (max-width:800px) {
             grid-column: 1 / 2; 
         }
@@ -61,6 +67,10 @@
             }
             @media screen and (max-width: 600px){ 
                 @include size (300px, 250px);
+            }
+
+            .projetc_title {
+                font-size: 1.3em;
             }
         }
     }
