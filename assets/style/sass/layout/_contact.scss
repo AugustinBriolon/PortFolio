@@ -7,8 +7,11 @@
     padding-left: 50px;
     display: flex;
     justify-content: center;
+    @media screen and (max-width:1000px) {
+        padding: 120px 0 0 0;
+    }
     @media screen and (max-width:600px) {
-        padding-left: 18px;
+        padding:50px 0 18px 0;
         height: 300px;
     }
 
@@ -46,6 +49,7 @@
             border-style: none none inset none;
             @media screen and (max-width:600px) {
                 font-size: 0.8em;
+                width: 200px;
             }
         }
 
@@ -67,25 +71,29 @@
             border-color: $color-third;
             padding: 0 5px 0 5px ;
             margin: 20px 0 35px 0;
+            white-space: nowrap;
             @media screen and (max-width:600px) {
-                margin: 20px 0 15px 0;
+                margin: 20px 0px 15px 0px;
+                align-items: center;
             }
             @media screen and (max-width:875px) {
                 margin: 50px 0 0 0;
             }
-
-                &:hover {
-                    background-color: $color-third;
-                    color: $color-primary;
-                    transition: all 0.5s;
-                }
             
-            svg{                
-                &:hover {
+            svg{   
+                fill: $color-secondary;
+            }
+
+            &:hover {
+                background-color: $color-third;
+                color: $color-primary;
+                transition: all 0.5s;
+
+                svg {
                     fill: $color-primary;
-                    transition: all 0.5s;
                 }
             }
+            
         }
     }
 

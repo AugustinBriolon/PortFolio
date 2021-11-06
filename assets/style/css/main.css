@@ -438,7 +438,7 @@ body {
 }
 @media screen and (max-width: 512px) {
   #abouttt {
-    margin: 110px 0 35px 0;
+    margin: 110px 0 60px 0;
   }
 }
 
@@ -449,9 +449,14 @@ body {
   display: flex;
   justify-content: center;
 }
+@media screen and (max-width: 1000px) {
+  .formulaire {
+    padding: 120px 0 0 0;
+  }
+}
 @media screen and (max-width: 600px) {
   .formulaire {
-    padding-left: 18px;
+    padding: 50px 0 18px 0;
     height: 300px;
   }
 }
@@ -497,6 +502,7 @@ body {
 .formulaire form .lookingFor,
 .formulaire form .email {
     font-size: 0.8em;
+    width: 200px;
   }
 }
 .formulaire form .c2a {
@@ -515,10 +521,12 @@ body {
   border-color: #4169E1;
   padding: 0 5px 0 5px;
   margin: 20px 0 35px 0;
+  white-space: nowrap;
 }
 @media screen and (max-width: 600px) {
   .formulaire form .c2a {
-    margin: 20px 0 15px 0;
+    margin: 20px 0px 15px 0px;
+    align-items: center;
   }
 }
 @media screen and (max-width: 875px) {
@@ -526,14 +534,16 @@ body {
     margin: 50px 0 0 0;
   }
 }
+.formulaire form .c2a svg {
+  fill: #232323;
+}
 .formulaire form .c2a:hover {
   background-color: #4169E1;
   color: #F4F2F3;
   transition: all 0.5s;
 }
-.formulaire form .c2a svg:hover {
+.formulaire form .c2a:hover svg {
   fill: #F4F2F3;
-  transition: all 0.5s;
 }
 
 footer {
