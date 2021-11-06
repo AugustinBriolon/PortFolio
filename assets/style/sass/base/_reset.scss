@@ -4,16 +4,12 @@
 *, *::after, *::after {
     padding: 0;
     margin: 10px;
+    scroll-behavior: smooth;
     box-sizing: border-box;
     color: $color-secondary;
-    scroll-behavior: smooth;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
-        @media screen and (max-width:600px) {
-        margin: 2px;
-        box-sizing: border-box;
-    }
-    @media screen and (max-width:1000px) {
-        box-sizing: border-box;
+    @media screen and (max-width:600px) {
+    margin: 2px;
     }
 }
 
