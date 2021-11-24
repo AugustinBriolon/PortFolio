@@ -30,3 +30,11 @@ const observer = new IntersectionObserver(handleIntersect, options)
 document.querySelectorAll('[class*="reveal"]').forEach(function (r) {
     observer.observe(r)
 })
+
+
+// Enable Clickjacking Attacks
+
+app.use(function(req, res, next) {
+    res.setHeader("Content-Security-Policy", "frame-ancestors 'self';");
+    next();
+});
