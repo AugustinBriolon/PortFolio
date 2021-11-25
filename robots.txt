@@ -1,2 +1,4 @@
 User-agent: *
 Disallow:
+Allow: /
+Sitemap: https://briolon.august1.dev/sitemap.xml

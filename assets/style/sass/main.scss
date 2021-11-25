@@ -1,16 +1,20 @@
-// VARIBLES 
-@import "./abstract/variables";
-@import "./abstract/mixins";
+/* Abstracts
+--------------------------------------------- */
+@import "./abstract/abstract";
 
-// RESET
+
+/* Base
+--------------------------------------------- */
 @import "./base/reset";
 
-// COMPONENT
-@import "./component/animation";
-@import "./component/visible";
+
+/* Components
+--------------------------------------------- */
+@import "./component/component.scss";
 
 
-// LAYOUT
+/* Layouts
+--------------------------------------------- */
 @import "./layout/header";
 @import "./layout/me";
 @import "./layout/skills";

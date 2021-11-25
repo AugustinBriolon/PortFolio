@@ -1,4 +1,10 @@
-*, *::after, *::after {
+/* Abstracts
+--------------------------------------------- */
+/* Abstract
+--------------------------------------------- */
+/* Base
+--------------------------------------------- */
+*, *::before, *::after {
   padding: 0;
   margin: 10px;
   scroll-behavior: smooth;
@@ -7,7 +13,7 @@
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
 @media screen and (max-width: 600px) {
-  *, *::after, *::after {
+  *, *::before, *::after {
     margin: 2px;
   }
 }
@@ -17,6 +23,10 @@ body {
   overflow-x: hidden;
 }
 
+/* Components
+--------------------------------------------- */
+/* Animations
+--------------------------------------------- */
 [class*=reveal] {
   opacity: 0;
   transform: translateY(-30px);
@@ -40,6 +50,8 @@ body {
   transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
+/* Layouts
+--------------------------------------------- */
 .nav_list {
   height: 70px;
   padding-top: 25px;
