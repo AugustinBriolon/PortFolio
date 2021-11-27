@@ -14,6 +14,7 @@
 
     .page_link {
         list-style-type: none;
+        margin: 10px;
         display: flex;
         justify-content: space-between;
         @media screen and (max-width:700px) {
@@ -24,6 +25,7 @@
     }
 
     .nav_list_item_link {
+        @extend %margin;
         font-size: 2em;
         font-weight: normal;
         color: $color-secondary;
@@ -39,6 +41,7 @@
     }
 
     .logo {
+        @extend %margin;
         font-size: 5em;
         font-weight: normal;
         color: $color-secondary;

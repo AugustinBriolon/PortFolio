@@ -4,6 +4,7 @@
 .allwork { 
     padding-top: 20px;
     .competence {
+        @extend %margin;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
         grid-template-rows: 2fr;
@@ -35,7 +36,7 @@
     }
 
     .description {
-        margin: 100px 0 100px 0;
+        margin: 10% 0 10% 0;
         height: auto;
         width: auto;
         display: grid;
@@ -70,7 +71,7 @@
         p {
             font-size: 1.3em;
             text-align: center;
-            padding: 50px 100px 0 100px;
+            padding: 50px 10% 0 10%;
             @media screen and (max-width:600px) {
                 padding: 0px 25px 25px 25px;
             }

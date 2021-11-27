@@ -2,14 +2,14 @@
 
 
 footer {
-    margin: 10% 0 0 6%;    
+    margin: 10% 2% 0 2%;    
     display: flex;
     justify-content: space-between;
     @media screen and (max-width:1100px){
         margin-top: 150px;
     }
     @media screen and (max-width:600px) {
-        margin: 190px 0 0 0 ;
+        margin: 80px 0 0 0 ;
     }
 
     .copy {
@@ -25,6 +25,7 @@ footer {
     }
 
     .socialnetwork {
+        @extend %margin;
         text-decoration: none;
         color: $color-forth;
         @media screen and (max-width:600px) {

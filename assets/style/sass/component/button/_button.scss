@@ -1,0 +1,25 @@
+.button {
+    font-size: 1.1em;
+    height: auto;
+    width: auto;
+    cursor: pointer;
+    text-align: center;
+    background-color: transparent;
+    color: $color-secondary;
+    padding: 0 5px 0 5px;
+    border: 1px solid;
+    border-radius: 0px;
+    border-color: $color-third;
+    padding: 6px 5px 6px 5px ;
+    margin: 20px 0 35px 0;
+    @media screen and (max-width:600px) {
+        margin: 20px 0 15px 0;
+    }
+
+        &:hover {
+            background-color: $color-third;
+            color: $color-primary;
+            transition: all 0.5s;
+        }
+    
+}

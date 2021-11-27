@@ -1,101 +1,46 @@
 // CONTACT
 
 
-.formulaire {
-    height: 450px;
-    width: auto;
-    padding-left: 50px;
-    display: flex;
-    justify-content: center;
-    @media screen and (max-width:1000px) {
-        padding: 120px 0 0 0;
-    }
-    @media screen and (max-width:600px) {
-        padding:50px 0 18px 0;
-        height: 300px;
+.contact {
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    @media screen and (max-width:800px) {
+        grid-template-columns: 1fr;
     }
 
-    form{
-        width: 700px;
-        padding-top: 180px;
-        font-size: 1.5em;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        @media screen and (max-width:1200px) {
-            flex-direction: column;
-        }
-        @media screen and (max-width:1000px) {
-            padding: 50px 0 0 0;
-        }
-        @media screen and (max-width:600px) {
-            text-align: start;
-            margin: 50px 10px 0 10px;
-        }
-
-
-        .name,
-        .lookingFor,
-        .email
-        {
-            border-style: none;
-            background-color: $color-primary;
-            height: 2.1em;
-            width: fit-content;
-            outline: none;
-            font-size: 1em;
-            border-style: none none inset none;
-            @media screen and (max-width:600px) {
-                font-size: 0.8em;
-                width: 200px;
-            }
-        }
-
-
-
-        .c2a {
-            font-size: 1.1em;
-            height: auto;
-            width: auto;
-            cursor: pointer;
-            text-align: center;
-            background-color: transparent;
-            color: $color-secondary;
-            display: flex;
-            flex-direction: row;
-            padding: 0 5px 0 5px;
-            border: 1px solid;
-            border-radius: 0px;
-            border-color: $color-third;
-            padding: 0 5px 0 5px ;
-            margin: 20px 0 35px 0;
-            white-space: nowrap;
-            @media screen and (max-width:600px) {
-                margin: 20px 0px 15px 0px;
-                align-items: center;
-            }
-            @media screen and (max-width:875px) {
-                margin: 50px 0 0 0;
-            }
-            
-            svg{   
-                fill: $color-secondary;
-            }
-
-            &:hover {
-                background-color: $color-third;
-                color: $color-primary;
-                transition: all 0.5s;
-
-                svg {
-                    fill: $color-primary;
-                    transition: all 0.5s;
-                }
-            }
-            
-        }
+    
+    .contact_title {
+        padding-top: 10px;
+        color: $color-third;
+        font-size: 1.8em;
+        text-align: center; 
+    }
+    
+    .cv_container {
+        grid-column: 1 / 2;
     }
 
+    .mail_container {
+        grid-column: 2 / 3;
+        @media screen and (max-width:800px) {
+            grid-column: 1 / 2; 
+        }
+    }
 }
+
+.contact_content {
+    margin: 0 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .txt_contact {
+        @extend %margin;
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+
+

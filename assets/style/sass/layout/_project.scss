@@ -1,68 +1,48 @@
 // PROJECT
 
+.project {
+    display: flex;
+    flex-direction: column;
+
+    .titleproject {
+        font-size: 1.8em;
+        color: $color-third;
+        text-align: center; 
+    }
+}
+
 
 .projects {
-    height: 500px;
+    height: 50vh;
     width: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
-    @media screen and (max-width:1100px) {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
     @media screen and (max-width:800px) {
-        grid-template-columns: 1fr 1fr;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        justify-content: center;
     }
     @media screen and (max-width:600px) {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
-
-    .titleproject {
-        grid-column: 2 / 3 ;
-        grid-row: 1 / 2;
-        font-size: 1.8em;
-        color: $color-third;
-        text-align: center; 
-
-        @media screen and (max-width:1100px) {
-            grid-column: 1 / 2;
-        }
-        @media screen and (max-width:800px) {
-            grid-column: 1 / 2;
-        }
-        @media screen and (max-width:600px) {
-            text-align: center; 
-        }
-    }
-
-    .project_container {
-        grid-column: 2 / 3 ;
-        grid-row: 2 / 3;
+    .projects_container {
         width: 100%;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        @media screen and (max-width:1100px) {
-            grid-column: 1 / 2;
-        }
-        @media screen and (max-width:800px) {
-            grid-column: 1 / 2; 
-        }
+
         .project_items {
             margin: 20px 0 0 0; 
             @include size (300px, 300px);
             display: flex;
             flex-direction: column;
             align-items: center;
-            .imgFLV {
+            .imgProject {
                 width: 100%;
                 height: auto;
-            }
-            a {
-                margin: 5px 0;
             }
             .descriptionImg{
                 text-align: center;
@@ -71,97 +51,44 @@
                 @include size (300px, 250px);
             }
 
-            .projetc_title {
+            .project_title {
+                @extend %margin;
                 font-size: 1.3em;
             }
         }
     }
-
-    .cv {
-        grid-column: 5 / 6;
-        grid-row: 1 / 2;
-        color: $color-third;
-        font-size: 1.8em;
-        text-align: center; 
-        @media screen and (max-width:1100px) {
-            grid-column: 3 / 4;
-        }
+    
+    .project1_container {
+        grid-column: 2 / 3 ;
         @media screen and (max-width:800px) {
-            grid-column: 2 / 3;
+            grid-column: 1 / 2; 
+        }
+    }
+
+    .project2_container {
+        grid-column: 4 / 5 ;
+        @media screen and (max-width:800px) {
+            grid-column: 1 / 2; 
+        }
+    }
+
+    
+    #abouttt {
+        margin: 50px 0 50px 0;
+        @media screen and (max-width:1320px) {
+            margin: 100px 0 15px 0;
+        }
+        @media screen and (max-width:1130px) {
+            margin: 240px 0 15px 0;
+        }
+        @media screen and (max-width:1100px) {
+            margin: 40px 0 15px 0;
         }
         @media screen and (max-width:600px) {
-            grid-column: 1 / 2; 
-            grid-row: 3 / 4;
+            margin: 80px 0 15px 0;
         }
-    }
-
-    .cv_container {
-        grid-column: 5 / 6;
-        grid-row: 2 / 3;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        @media screen and (max-width:1100px) {
-            grid-column: 3 / 4;
+        @media screen and (max-width:512px) {
+            margin: 110px 0 60px 0;
         }
-        @media screen and (max-width:800px) {
-            grid-column: 2 / 3;
-        }
-        @media screen and (max-width:600px) {
-            grid-column: 1 / 2; 
-            grid-row: 4 / 5;
-            text-align: center; 
-        }
-
-        .txt_cv {
-            font-size: 1.3em;
-            text-align: center;
-        }
-
-        .cv_button {
-            font-size: 1.1em;
-            height: auto;
-            width: auto;
-            cursor: pointer;
-            text-align: center;
-            background-color: transparent;
-            color: $color-secondary;
-            padding: 0 5px 0 5px;
-            border: 1px solid;
-            border-radius: 0px;
-            border-color: $color-third;
-            padding: 6px 5px 6px 5px ;
-            margin: 20px 0 35px 0;
-            @media screen and (max-width:600px) {
-                margin: 20px 0 15px 0;
-            }
-
-                &:hover {
-                    background-color: $color-third;
-                    color: $color-primary;
-                    transition: all 0.5s;
-                }
-            
-        }
-    }
-}
-
-#abouttt {
-    margin: 50px 0 50px 0;
-    @media screen and (max-width:1320px) {
-        margin: 100px 0 15px 0;
-    }
-    @media screen and (max-width:1130px) {
-        margin: 240px 0 15px 0;
-    }
-    @media screen and (max-width:1100px) {
-        margin: 40px 0 15px 0;
-    }
-    @media screen and (max-width:600px) {
-        margin: 80px 0 15px 0;
-    }
-    @media screen and (max-width:512px) {
-        margin: 110px 0 60px 0;
     }
 }
