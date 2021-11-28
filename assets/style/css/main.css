@@ -223,6 +223,9 @@ body {
 .presentation .introduction .title .worklink {
   font-size: 1.4em;
 }
+.presentation .faceMe {
+  margin-left: 10%;
+}
 @media screen and (max-width: 1400px) {
   .presentation .faceMe {
     display: none;
