@@ -1,5 +1,4 @@
-**/.DS_Store
-**/ Icon
-**/ sitemap.xml
-**/ google04e7f9a610af146f.html
-**/ .vscode
+.DS_Store/
+sitemap.xml
+google04e7f9a610af146f.html
+robots.txt
