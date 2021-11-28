@@ -232,6 +232,7 @@ body {
   }
 }
 .presentation .faceMe .faceDim {
+  margin-top: 15%;
   width: 80%;
   height: auto;
 }
