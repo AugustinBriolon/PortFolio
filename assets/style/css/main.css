@@ -59,6 +59,14 @@ body {
   transition: all 0.5s;
 }
 
+#barre-scroll {
+  height: 5px;
+  position: fixed;
+  z-index: 99999;
+  bottom: top;
+  background: #4169E1;
+}
+
 [class*=reveal] {
   opacity: 0;
   transform: translateY(-30px);

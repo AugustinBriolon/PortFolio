@@ -1,3 +1,19 @@
+//Animation Scroll
+
+window.onload = () => {
+    window.addEventListener("scroll", () => {
+        let hauteur = document.documentElement.scrollHeight - window.innerHeight;
+        let position = window.scrollY;
+        let largeur = document.documentElement.clientWidth;
+
+        let barre = (position / hauteur) * largeur;
+
+        document.getElementById("barre-scroll").style.width = barre + "px";
+    });
+};
+
+
+
 // Date Copyright
 
 var maintenant=new Date();
