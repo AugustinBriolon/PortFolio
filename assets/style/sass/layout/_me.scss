@@ -77,6 +77,10 @@
                 }
                 .worklink {
                     font-size: 1.4em;
+
+                    &:hover {
+                        color: $color-third;
+                    }
                 }
             }
         }

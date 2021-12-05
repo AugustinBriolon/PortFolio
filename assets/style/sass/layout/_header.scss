@@ -35,8 +35,9 @@
         }
 
         &:hover {
+            transition: all 0.4s;
             color: $color-third;
-            border-bottom: 1px solid $color-third;
+            @extend %underline;
         }
     }
 

@@ -31,7 +31,13 @@
             &:hover{
                 transition: 0.3s;
                 fill: $color-third;
+                transform: scale(1.2);
             }
+        
+            &:active {
+                transform: scale(1.5);
+            }
+    
         }   
     }
 

@@ -54,6 +54,10 @@
             .project_title {
                 @extend %margin;
                 font-size: 1.3em;
+
+                &:hover {
+                    @extend %underline;
+                }
             }
         }
     }

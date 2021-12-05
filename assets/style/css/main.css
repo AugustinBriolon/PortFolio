@@ -6,6 +6,11 @@ footer .socialnetwork, .contact_content .txt_contact, .projects .projects_contai
   margin: 10px;
 }
 
+footer .socialnetwork:hover, .projects .projects_container .project_items .project_title:hover, .nav_list .nav_list_item_link:hover {
+  transition: all 0.4s;
+  border-bottom: 1px solid #4169E1;
+}
+
 /* Base
 --------------------------------------------- */
 /* Typography
@@ -130,8 +135,8 @@ body {
   }
 }
 .nav_list .nav_list_item_link:hover {
+  transition: all 0.4s;
   color: #4169E1;
-  border-bottom: 1px solid #4169E1;
 }
 .nav_list .logo {
   font-size: 5em;
@@ -231,6 +236,9 @@ body {
 .presentation .introduction .title .worklink {
   font-size: 1.4em;
 }
+.presentation .introduction .title .worklink:hover {
+  color: #4169E1;
+}
 .presentation .faceMe {
   margin-left: 10%;
 }
@@ -286,6 +294,10 @@ body {
 .allwork .competence svg:hover {
   transition: 0.3s;
   fill: #4169E1;
+  transform: scale(1.2);
+}
+.allwork .competence svg:active {
+  transform: scale(1.5);
 }
 .allwork .description {
   margin: 10% 0 10% 0;

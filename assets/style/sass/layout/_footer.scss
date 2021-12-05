@@ -35,5 +35,9 @@ footer {
         @media screen and (max-width:1000px){
             padding-right: 0px;
         }
+
+        &:hover {
+            @extend %underline;
+        }
     }
 }
