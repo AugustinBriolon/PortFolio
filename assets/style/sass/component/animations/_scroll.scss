@@ -4,4 +4,7 @@
     z-index: 99999;
     bottom: top;
     background: $color-third;
+    @media screen and (max-width:600px) {
+        margin: -4px;
+    }
 }

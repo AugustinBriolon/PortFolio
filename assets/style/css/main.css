@@ -71,6 +71,11 @@ body {
   bottom: top;
   background: #4169E1;
 }
+@media screen and (max-width: 600px) {
+  #barre-scroll {
+    margin: -4px;
+  }
+}
 
 [class*=reveal] {
   opacity: 0;
