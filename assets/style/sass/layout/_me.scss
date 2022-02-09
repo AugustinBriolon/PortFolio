@@ -2,18 +2,18 @@
 
 
 .presentation {
-    padding-top: 4em;
     height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
     @media screen and (max-width:600px) {
-        margin-bottom: 50px;
         padding-bottom: 12em;
-        align-items: center;
     }
 
         .introduction{
             display: flex;
+            justify-content: flex-start;
+            align-items: center;
             @extend %margin;
 
             .line { 
@@ -89,15 +89,15 @@
         }
 
     .faceMe {
-        margin-left: 10%;
+        min-width: 18vw;
+        height: auto;
+        margin-right: 15%;
         @media screen and (max-width:1400px) {
             display: none;
         }
         
         .faceDim {
-            margin-top: 15%;
-            width: 80%;
-            height: auto;
+            width: fit-content;
             @media screen and (max-width:1400px){
                 display: none;
             }

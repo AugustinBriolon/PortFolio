@@ -34,7 +34,6 @@ body {
   overflow-x: hidden;
 }
 
-
 /* Components
 --------------------------------------------- */
 /* Animations
@@ -189,20 +188,20 @@ body {
 }
 
 .presentation {
-  padding-top: 4em;
   height: 100vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
+  align-items: center;
 }
 @media screen and (max-width: 600px) {
   .presentation {
-    margin-bottom: 50px;
     padding-bottom: 12em;
-    align-items: center;
   }
 }
 .presentation .introduction {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 .presentation .introduction .line {
   display: flex;
@@ -280,7 +279,9 @@ body {
   color: #4169E1;
 }
 .presentation .faceMe {
-  margin-left: 10%;
+  min-width: 18vw;
+  height: auto;
+  margin-right: 15%;
 }
 @media screen and (max-width: 1400px) {
   .presentation .faceMe {
@@ -288,9 +289,7 @@ body {
   }
 }
 .presentation .faceMe .faceDim {
-  margin-top: 15%;
-  width: 80%;
-  height: auto;
+  width: fit-content;
 }
 @media screen and (max-width: 1400px) {
   .presentation .faceMe .faceDim {
