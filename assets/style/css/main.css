@@ -34,6 +34,7 @@ body {
   overflow-x: hidden;
 }
 
+
 /* Components
 --------------------------------------------- */
 /* Animations
@@ -246,6 +247,7 @@ body {
 .presentation .introduction .title h1 {
   font-size: 6em;
   font-family: "Cormorant Garamond", serif;
+  color: #232323;
 }
 @media screen and (max-width: 1000px) {
   .presentation .introduction .title h1 {
@@ -269,6 +271,7 @@ body {
 }
 .presentation .introduction .title .myname {
   font-size: 1.9em;
+  color: #232323;
 }
 .presentation .introduction .title .worklink {
   font-size: 1.4em;
@@ -322,6 +325,8 @@ body {
   width: auto;
   display: inline-block;
   margin: 0 auto;
+  margin-bottom: 10px;
+  transition: 0.3s;
 }
 @media screen and (max-width: 1000px) {
   .allwork .competence svg {
@@ -329,7 +334,6 @@ body {
   }
 }
 .allwork .competence svg:hover {
-  transition: 0.3s;
   fill: #4169E1;
   transform: scale(1.2);
 }
@@ -536,6 +540,7 @@ body {
 .contact_content .txt_contact {
   font-size: 1.3em;
   text-align: center;
+  color: #232323;
 }
 
 footer {

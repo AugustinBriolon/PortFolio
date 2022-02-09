@@ -24,12 +24,13 @@
             width: auto;
             display: inline-block;
             margin: 0 auto;
+            margin-bottom: 10px;
+            transition: 0.3s;
             @media screen and (max-width:1000px) {
                 margin-top: 25px;
             }
 
             &:hover{
-                transition: 0.3s;
                 fill: $color-third;
                 transform: scale(1.2);
             }

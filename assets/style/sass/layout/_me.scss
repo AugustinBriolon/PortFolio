@@ -57,6 +57,7 @@
                 h1 {
                     font-size: 6em;
                     font-family: 'Cormorant Garamond', serif;
+                    color: $color-secondary;
                     @media screen and (max-width:1000px) {
                         font-size: 5em;
                     }
@@ -74,6 +75,8 @@
 
                 .myname {
                     font-size: 1.9em;
+                    color: $color-secondary;
+
                 }
                 .worklink {
                     font-size: 1.4em;
