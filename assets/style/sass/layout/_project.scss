@@ -13,19 +13,17 @@
 
 
 .projects {
-    height: 50vh;
     width: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
     align-items: center;
-    @media screen and (max-width:800px) {
-        height: 100vh;
-        grid-template-columns: 1fr;
-        justify-content: center;
+    @media screen and (max-width:950px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr;
     }
-    @media screen and (max-width:600px) {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+    @media screen and (max-width:700px) {
+        grid-template-columns: 1fr; 
+        margin-bottom: 20px;
     }
 
     .projects_container {
@@ -61,20 +59,32 @@
             }
         }
     }
-    
-    .project1_container {
-        grid-column: 2 / 3 ;
-        @media screen and (max-width:800px) {
-            grid-column: 1 / 2; 
+
+    .project3_container {
+        @media screen and (max-width:950px) {
+            grid-row: 2 / 3;
+        }
+        @media screen and (max-width:700px) {
+            grid-row: 3 / 4; 
         }
     }
 
-    .project2_container {
-        grid-column: 4 / 5 ;
-        @media screen and (max-width:800px) {
+    .project1_container,
+    .project3_container {
+        @media screen and (max-width:950px) {
+            grid-column: 1 / 2;
+        }
+    }
+
+    .project1_container,
+    .project2_container,
+    .project3_container {
+        @media screen and (max-width:700px) {
             grid-column: 1 / 2; 
         }
     }
+    
+
 
     
     #abouttt {
