@@ -1,27 +1,25 @@
+// Animation Loader
+
+const box = document.querySelector('.boxLoader')
+
+window.addEventListener('load', () => {
+    box.classList.add('hidden');
+})
+
+
 //Animation Scroll
 
 window.onload = () => {
     window.addEventListener("scroll", () => {
-        let hauteur = document.documentElement.scrollHeight - window.innerHeight;
-        let position = window.scrollY;
-        let largeur = document.documentElement.clientWidth;
+        let hauteur = document.documentElement.scrollHeight - window.innerHeight
+        let position = window.scrollY
+        let largeur = document.documentElement.clientWidth
 
         let barre = (position / hauteur) * largeur;
 
         document.getElementById("barre-scroll").style.width = barre + "px";
     });
 };
-
-
-
-// Date Copyright
-
-var maintenant=new Date();
-var an = maintenant.getFullYear();
-an.toString();
-
-let copyright = document.querySelector('.copyright')
-copyright.textContent = (an);
 
 
 // Animation Visible
@@ -46,3 +44,13 @@ const observer = new IntersectionObserver(handleIntersect, options)
 document.querySelectorAll('[class*="reveal"]').forEach(function (r) {
     observer.observe(r)
 })
+
+
+// Date Copyright
+
+var maintenant=new Date();
+var an = maintenant.getFullYear();
+an.toString();
+
+let copyright = document.querySelector('.copyright')
+copyright.textContent = (an);
