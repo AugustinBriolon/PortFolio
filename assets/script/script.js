@@ -3,7 +3,7 @@
 const box = document.querySelector('.boxLoader')
 
 window.addEventListener('load', () => {
-    box.classList.add('hidden');
+    box.classList.add('hidden')
 })
 
 
@@ -17,9 +17,9 @@ window.onload = () => {
 
         let barre = (position / hauteur) * largeur;
 
-        document.getElementById("barre-scroll").style.width = barre + "px";
-    });
-};
+        document.getElementById("barre-scroll").style.width = barre + "px"
+    })
+}
 
 
 // Animation Visible
@@ -46,11 +46,27 @@ document.querySelectorAll('[class*="reveal"]').forEach(function (r) {
 })
 
 
+// Animation Cursor
+
+const cursor = document.querySelector('.new-cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute('style', 'top:'+(e.pageY - 10)+"px; left:"+(e.pageX - 10)+"px;")
+})
+
+document.addEventListener('click', ()=>{
+    cursor.classList.add('expand');
+
+    setTimeout(()=>{
+        cursor.classList.remove("expand");
+    }, 500);
+})
+
 // Date Copyright
 
-var maintenant=new Date();
-var an = maintenant.getFullYear();
-an.toString();
+var maintenant=new Date()
+var an = maintenant.getFullYear()
+an.toString()
 
 let copyright = document.querySelector('.copyright')
-copyright.textContent = (an);
+copyright.textContent = (an)

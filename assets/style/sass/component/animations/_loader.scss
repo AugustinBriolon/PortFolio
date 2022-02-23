@@ -2,20 +2,18 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    z-index: 9999;
+    z-index: -1;
     .loader {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        z-index: 9999;
-        cursor : wait;
     }
     
     .loader path:nth-child(1) {
         stroke-dasharray: 200px;
         stroke-dashoffset: 200px;
-        animation: anim 3s ease-in-out forwards;
+        animation: anim 3s ease-in-out alternate;
     }
     
     @keyframes anim {

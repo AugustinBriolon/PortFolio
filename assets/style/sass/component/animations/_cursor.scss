@@ -1,0 +1,18 @@
+.new-cursor {
+    position: absolute;
+    z-index: 9999;
+    width: 25px;
+    height: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    pointer-events: none;
+    background-color: #ffff;
+    mix-blend-mode: difference;
+    transition: .1s;
+}
+
+.expand {
+    width: 28px;
+    height: 28px;
+    transition: .1s;
+}
