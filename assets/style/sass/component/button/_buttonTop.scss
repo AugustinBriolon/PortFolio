@@ -1,0 +1,11 @@
+.goToTop {
+    @include size(50px, 50px);
+    position: fixed;
+    bottom : 3%;
+    right: 2%;
+
+    .arrowTop {
+        @include size(50px, 50px);
+
+    }
+}
