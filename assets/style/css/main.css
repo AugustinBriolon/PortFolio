@@ -97,18 +97,6 @@ body {
   transform: scale3d(1, 1, 1);
 }
 
-.goToTop {
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 3%;
-  right: 2%;
-}
-.goToTop .arrowTop {
-  width: 50px;
-  height: 50px;
-}
-
 .boxLoader {
   width: 100%;
   height: 100%;
@@ -475,26 +463,13 @@ body {
 .projects {
   width: auto;
   display: flex;
-  align-items: center;
-}
-@media screen and (max-width: 950px) {
-  .projects {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-  }
-}
-@media screen and (max-width: 700px) {
-  .projects {
-    grid-template-columns: 1fr;
-    margin-bottom: 20px;
-  }
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 .projects .projects_container {
-  width: 100%;
+  width: auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .projects .projects_container .project_items {
   margin: 20px 0 0 0;
@@ -520,56 +495,8 @@ body {
 .projects .projects_container .project_items .project_title {
   font-size: 1.3em;
 }
-@media screen and (max-width: 950px) {
-  .projects .project3_container {
-    grid-row: 2/3;
-  }
-}
-@media screen and (max-width: 700px) {
-  .projects .project3_container {
-    grid-row: 3/4;
-  }
-}
-@media screen and (max-width: 950px) {
-  .projects .project1_container,
-.projects .project3_container {
-    grid-column: 1/2;
-  }
-}
-@media screen and (max-width: 700px) {
-  .projects .project1_container,
-.projects .project2_container,
-.projects .project3_container {
-    grid-column: 1/2;
-  }
-}
-.projects #abouttt {
-  margin: 50px 0 50px 0;
-}
-@media screen and (max-width: 1320px) {
-  .projects #abouttt {
-    margin: 100px 0 15px 0;
-  }
-}
-@media screen and (max-width: 1130px) {
-  .projects #abouttt {
-    margin: 240px 0 15px 0;
-  }
-}
-@media screen and (max-width: 1100px) {
-  .projects #abouttt {
-    margin: 40px 0 15px 0;
-  }
-}
-@media screen and (max-width: 600px) {
-  .projects #abouttt {
-    margin: 80px 0 15px 0;
-  }
-}
-@media screen and (max-width: 512px) {
-  .projects #abouttt {
-    margin: 110px 0 60px 0;
-  }
+#abouttt {
+  margin: 4em 0 4em 0;
 }
 
 .contact {
