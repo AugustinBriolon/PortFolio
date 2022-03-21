@@ -9,10 +9,17 @@
     box-sizing: border-box;
     color: $color-secondary;
     font-family: 'Zen Kaku Gothic Antique', sans-serif;
+
     
     @media screen and (max-width:600px) {
     margin: 2px;
+    cursor: auto;
     }
+}
+
+*::selection {
+    color: $color-primary;
+    background-color: $color-third;
 }
 
 body {

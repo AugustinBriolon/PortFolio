@@ -27,7 +27,13 @@ footer .socialnetwork:hover, .projects .projects_container .project_items .proje
 @media screen and (max-width: 600px) {
   *, *::before, *::after {
     margin: 2px;
+    cursor: auto;
   }
+}
+
+*::selection {
+  color: #F4F2F3;
+  background-color: #4169E1;
 }
 
 body {
@@ -142,6 +148,11 @@ body {
   background-color: #ffff;
   mix-blend-mode: difference;
   transition: 0.1s;
+}
+@media screen and (max-width: 600px) {
+  .new-cursor {
+    display: none;
+  }
 }
 
 .expand {
@@ -478,6 +489,26 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  -webkit-transition: all 1s ease;
+  /* Safari and Chrome */
+  -moz-transition: all 1s ease;
+  /* Firefox */
+  -ms-transition: all 1s ease;
+  /* IE 9 */
+  -o-transition: all 1s ease;
+  /* Opera */
+  transition: all 1s ease;
+}
+.projects .projects_container .project_items:hover {
+  -webkit-transform: scale(1.1);
+  /* Safari and Chrome */
+  -moz-transform: scale(1.1);
+  /* Firefox */
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -o-transform: scale(1.1);
+  /* Opera */
+  transform: scale(1.1);
 }
 .projects .projects_container .project_items .imgProject {
   width: 100%;

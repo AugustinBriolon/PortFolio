@@ -9,6 +9,10 @@
     background-color: #ffff;
     mix-blend-mode: difference;
     transition: .1s;
+
+    @media screen and (max-width: 600px){ 
+        display: none;
+    }
 }
 
 .expand {
