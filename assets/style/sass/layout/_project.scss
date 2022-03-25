@@ -7,7 +7,11 @@
     .titleproject {
         font-size: 1.8em;
         color: $color-third;
-        text-align: center; 
+        text-align: center;
+
+        @media screen and (max-width: 600px){ 
+            margin-top: 40px;
+        }
     }
 }
 

@@ -470,6 +470,11 @@ body {
   color: #4169E1;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .project .titleproject {
+    margin-top: 40px;
+  }
+}
 
 .projects {
   width: auto;
