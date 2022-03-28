@@ -483,6 +483,7 @@ body {
   justify-content: space-evenly;
 }
 .projects .projects_container {
+  padding: 50px;
   width: auto;
   display: flex;
   justify-content: center;
