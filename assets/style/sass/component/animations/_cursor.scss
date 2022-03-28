@@ -1,22 +1,28 @@
-.new-cursor {
-    position: absolute;
-    z-index: 9999;
-    width: 25px;
-    height: 25px;
-    border: 1px solid;
-    border-radius: 50%;
-    pointer-events: none;
-    background-color: #ffff;
-    mix-blend-mode: difference;
-    transition: .1s;
+// Cursor animation
 
-    @media screen and (max-width: 600px){ 
-        display: none;
-    }
+.cursor {
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid $color-secondary;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transition-property: backgroung, transform;
+    transform-origin: 100% 100%;
+    z-index: 1;
 }
 
-.expand {
-    width: 28px;
-    height: 28px;
-    transition: .1s;
+.linkCursor {
+    z-index: 33;
+}
+
+.link-grow {
+    transform: scale(2);
+    background: $color-secondary;
+}
+
+.hover-link {
+    color: $color-primary;
 }

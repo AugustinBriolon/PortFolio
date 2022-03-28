@@ -6,7 +6,7 @@ footer .socialnetwork, .contact_content .txt_contact, .projects .projects_contai
   margin: 10px;
 }
 
-footer .socialnetwork:hover, .projects .projects_container .project_items .project_title:hover, .nav_list .nav_list_item_link:hover {
+.projects .projects_container .project_items .project_title:hover {
   transition: all 0.4s;
   border-bottom: 1px solid #4169E1;
 }
@@ -137,28 +137,31 @@ body {
     display: none;
   }
 }
-.new-cursor {
-  position: absolute;
-  z-index: 9999;
-  width: 25px;
-  height: 25px;
-  border: 1px solid;
+.cursor {
+  width: 3rem;
+  height: 3rem;
+  border: 2px solid #232323;
   border-radius: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
   pointer-events: none;
-  background-color: #ffff;
-  mix-blend-mode: difference;
-  transition: 0.1s;
-}
-@media screen and (max-width: 600px) {
-  .new-cursor {
-    display: none;
-  }
+  transition: all 0.3s ease;
+  transition-property: backgroung, transform;
+  transform-origin: 100% 100%;
+  z-index: 1;
 }
 
-.expand {
-  width: 28px;
-  height: 28px;
-  transition: 0.1s;
+.linkCursor {
+  z-index: 33;
+}
+
+.link-grow {
+  transform: scale(2);
+  background: #232323;
+}
+
+.hover-link {
+  color: #F4F2F3;
 }
 
 #barre-scroll {
@@ -214,9 +217,10 @@ body {
 }
 .nav_list .page_link {
   list-style-type: none;
-  margin: 10px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  z-index: 33;
 }
 @media screen and (max-width: 700px) {
   .nav_list .page_link {
@@ -227,8 +231,8 @@ body {
 }
 .nav_list .nav_list_item_link {
   font-size: 2em;
+  padding: 1rem;
   font-weight: normal;
-  color: #232323;
   text-decoration: none;
 }
 @media screen and (max-width: 700px) {
@@ -236,15 +240,11 @@ body {
     font-size: 1.2em;
   }
 }
-.nav_list .nav_list_item_link:hover {
-  transition: all 0.4s;
-  color: #4169E1;
-}
 .nav_list .logo {
   font-size: 5em;
   font-weight: normal;
-  color: #232323;
   text-decoration: none;
+  z-index: 33;
 }
 @media screen and (max-width: 700px) {
   .nav_list .logo {
@@ -339,6 +339,7 @@ body {
 }
 .presentation .introduction .title .worklink {
   font-size: 1.4em;
+  z-index: 33;
 }
 .presentation .introduction .title .worklink:hover {
   color: #4169E1;
@@ -603,7 +604,7 @@ footer .socialsnetwork {
 }
 footer .socialnetwork {
   text-decoration: none;
-  color: #1A3CA3;
+  z-index: 33;
 }
 @media screen and (max-width: 600px) {
   footer .socialnetwork {

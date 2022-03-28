@@ -14,9 +14,10 @@
 
     .page_link {
         list-style-type: none;
-        margin: 10px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        z-index: 33;
         @media screen and (max-width:700px) {
             flex-direction: column;
             padding-top: 15px;
@@ -27,17 +28,11 @@
     .nav_list_item_link {
         @extend %margin;
         font-size: 2em;
+        padding: 1rem;
         font-weight: normal;
-        color: $color-secondary;
         text-decoration: none;
         @media screen and (max-width:700px) {
             font-size: 1.2em;
-        }
-
-        &:hover {
-            transition: all 0.4s;
-            color: $color-third;
-            @extend %underline;
         }
     }
 
@@ -45,8 +40,8 @@
         @extend %margin;
         font-size: 5em;
         font-weight: normal;
-        color: $color-secondary;
         text-decoration: none;
+        z-index: 33;
         @media screen and (max-width:700px) {
             font-size: 4em;
         }

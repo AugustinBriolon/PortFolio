@@ -27,17 +27,13 @@ footer {
     .socialnetwork {
         @extend %margin;
         text-decoration: none;
-        color: $color-forth;
+        z-index: 33;
         @media screen and (max-width:600px) {
             font-size: 0.8em;
             margin-right: 20px;
         }
         @media screen and (max-width:1000px){
             padding-right: 0px;
-        }
-
-        &:hover {
-            @extend %underline;
         }
     }
 }
