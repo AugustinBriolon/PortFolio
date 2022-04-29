@@ -339,10 +339,6 @@ body {
 }
 .presentation .introduction .title .worklink {
   font-size: 1.4em;
-  z-index: 33;
-}
-.presentation .introduction .title .worklink:hover {
-  color: #4169E1;
 }
 .presentation .faceMe {
   min-width: 18vw;
