@@ -46,28 +46,6 @@ document.querySelectorAll('[class*="reveal"]').forEach(function (r) {
 })
 
 
-// Animation Cursor
-
-let mouseCursor = document.querySelector('.cursor')
-let pageLinks = document.querySelectorAll('.linkCursor')
-
-window.addEventListener('mousemove', cursor)
-
-function cursor(e) {
-    mouseCursor.setAttribute('style', 'top:'+(e.pageY )+"px; left:"+(e.pageX)+"px;")
-}
-
-pageLinks.forEach(link => {
-    link.addEventListener('mouseover', () => {
-        mouseCursor.classList.add('link-grow')
-        link.classList.add('hover-link')
-    })
-    link.addEventListener('mouseleave', () => {
-        mouseCursor.classList.remove('link-grow')
-        link.classList.remove('hover-link')
-    })
-})
-
 // Date Copyright
 
 var maintenant=new Date()

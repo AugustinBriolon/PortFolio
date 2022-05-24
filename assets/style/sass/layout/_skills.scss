@@ -1,9 +1,14 @@
 // SKILLS
 
 
-.allwork { 
+.allWork { 
     padding-top: 20px;
-    .competence {
+
+    @media screen and (max-width: 600px){ 
+        margin: 0 2px;
+    }
+
+    .AllLanguage {
         @extend %margin;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;

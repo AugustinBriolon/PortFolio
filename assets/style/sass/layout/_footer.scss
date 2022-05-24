@@ -19,12 +19,12 @@ footer {
     }
 
 
-    .socialsnetwork {
+    .socialsNetwork {
         display: flex;
         flex-direction: row;
     }
 
-    .socialnetwork {
+    .socialNetwork {
         @extend %margin;
         text-decoration: none;
         z-index: 33;

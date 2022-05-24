@@ -7,7 +7,7 @@
     justify-content: space-between;
     align-items: center;
     @media screen and (max-width:600px) {
-        padding-bottom: 12em;
+        height: 90vh;
     }
 
         .introduction{
@@ -22,14 +22,14 @@
                 justify-content: center;
                 height: calc(65vmin + 40px);
 
-                .vertical-line{
+                .verticalLine{
                     border-left: 2px solid $color-secondary;
                     display: inline-block;
                     height: 18em;
                     margin: 0 20px;
                 }
 
-                #mycercle {
+                #myCercle {
                     @extend %margin;
                     width: 20px;
                     height: 20px;
@@ -73,13 +73,17 @@
                 
                 }
 
-                .myname {
+                .myName {
                     font-size: 1.9em;
                     color: $color-secondary;
 
                 }
-                .worklink {
+                .workLink {
                     font-size: 1.4em;
+                    
+                    &:hover {
+                        color: $color-third;
+                    }
                 }
             }
         }

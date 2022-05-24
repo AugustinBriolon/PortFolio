@@ -2,12 +2,11 @@
 --------------------------------------------- */
 /* Abstract
 --------------------------------------------- */
-footer .socialnetwork, .contact_content .txt_contact, .projects .projects_container .project_items .project_title, .allwork .competence, .presentation .introduction .line #mycercle, .presentation .introduction, .nav_list .logo, .nav_list .nav_list_item_link {
+footer .socialNetwork, .contactContent .txtContact, .projects .projectsContainer .projectItems .project_title, .allWork .AllLanguage, .presentation .introduction .line #myCercle, .presentation .introduction, .navList .logo, .navList .navListItem {
   margin: 10px;
 }
 
-.projects .projects_container .project_items .project_title:hover {
-  transition: all 0.4s;
+.projects .projectsContainer .projectItems .project_title:hover, .navList .navListItem:hover {
   border-bottom: 1px solid #4169E1;
 }
 
@@ -18,17 +17,10 @@ footer .socialnetwork, .contact_content .txt_contact, .projects .projects_contai
 *, *::before, *::after {
   padding: 0;
   margin: 0;
-  cursor: none;
   scroll-behavior: smooth;
   box-sizing: border-box;
   color: #232323;
   font-family: "Zen Kaku Gothic Antique", sans-serif;
-}
-@media screen and (max-width: 600px) {
-  *, *::before, *::after {
-    margin: 2px;
-    cursor: auto;
-  }
 }
 
 *::selection {
@@ -45,7 +37,7 @@ body {
 --------------------------------------------- */
 /* Animations
 --------------------------------------------- */
-.link-perso {
+.linkPerso {
   text-decoration: none;
 }
 
@@ -137,33 +129,6 @@ body {
     display: none;
   }
 }
-.cursor {
-  width: 3rem;
-  height: 3rem;
-  border: 2px solid #232323;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  pointer-events: none;
-  transition: all 0.3s ease;
-  transition-property: backgroung, transform;
-  transform-origin: 100% 100%;
-  z-index: 1;
-}
-
-.linkCursor {
-  z-index: 33;
-}
-
-.link-grow {
-  transform: scale(2);
-  background: #232323;
-}
-
-.hover-link {
-  color: #F4F2F3;
-}
-
 #barre-scroll {
   height: 5px;
   position: fixed;
@@ -202,7 +167,7 @@ body {
 
 /* Layouts
 --------------------------------------------- */
-.nav_list {
+.navList {
   height: 70px;
   padding-top: 25px;
   display: flex;
@@ -210,12 +175,13 @@ body {
   align-items: center;
 }
 @media screen and (max-width: 700px) {
-  .nav_list {
+  .navList {
     width: auto;
     height: 100px;
+    flex-direction: column;
   }
 }
-.nav_list .page_link {
+.navList .pageLink {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -223,31 +189,30 @@ body {
   z-index: 33;
 }
 @media screen and (max-width: 700px) {
-  .nav_list .page_link {
-    flex-direction: column;
+  .navList .pageLink {
     padding-top: 15px;
     justify-content: center;
   }
 }
-.nav_list .nav_list_item_link {
+.navList .navListItem {
   font-size: 2em;
   padding: 1rem;
   font-weight: normal;
   text-decoration: none;
 }
 @media screen and (max-width: 700px) {
-  .nav_list .nav_list_item_link {
+  .navList .navListItem {
     font-size: 1.2em;
   }
 }
-.nav_list .logo {
+.navList .logo {
   font-size: 5em;
   font-weight: normal;
   text-decoration: none;
   z-index: 33;
 }
 @media screen and (max-width: 700px) {
-  .nav_list .logo {
+  .navList .logo {
     font-size: 4em;
   }
 }
@@ -260,7 +225,7 @@ body {
 }
 @media screen and (max-width: 600px) {
   .presentation {
-    padding-bottom: 12em;
+    height: 90vh;
   }
 }
 .presentation .introduction {
@@ -274,27 +239,27 @@ body {
   justify-content: center;
   height: calc(65vmin + 40px);
 }
-.presentation .introduction .line .vertical-line {
+.presentation .introduction .line .verticalLine {
   border-left: 2px solid #232323;
   display: inline-block;
   height: 18em;
   margin: 0 20px;
 }
-.presentation .introduction .line #mycercle {
+.presentation .introduction .line #myCercle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
   border: 2px solid #232323;
 }
 @media screen and (max-width: 700px) {
-  .presentation .introduction .line #mycercle {
+  .presentation .introduction .line #myCercle {
     width: 20px;
     height: 28px;
     margin-left: 10px;
   }
 }
 @media screen and (max-width: 400px) {
-  .presentation .introduction .line #mycercle {
+  .presentation .introduction .line #myCercle {
     width: 20px;
     height: 38px;
     margin-left: 10px;
@@ -333,12 +298,15 @@ body {
     font-size: 2.7em;
   }
 }
-.presentation .introduction .title .myname {
+.presentation .introduction .title .myName {
   font-size: 1.9em;
   color: #232323;
 }
-.presentation .introduction .title .worklink {
+.presentation .introduction .title .workLink {
   font-size: 1.4em;
+}
+.presentation .introduction .title .workLink:hover {
+  color: #4169E1;
 }
 .presentation .faceMe {
   min-width: 18vw;
@@ -359,28 +327,33 @@ body {
   }
 }
 
-.allwork {
+.allWork {
   padding-top: 20px;
 }
-.allwork .competence {
+@media screen and (max-width: 600px) {
+  .allWork {
+    margin: 0 2px;
+  }
+}
+.allWork .AllLanguage {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr;
   align-items: center;
 }
 @media screen and (max-width: 1000px) {
-  .allwork .competence {
+  .allWork .AllLanguage {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
 @media screen and (max-width: 600px) {
-  .allwork .competence {
+  .allWork .AllLanguage {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   }
 }
-.allwork .competence svg {
+.allWork .AllLanguage svg {
   fill: #232323;
   height: 5em;
   width: auto;
@@ -390,18 +363,18 @@ body {
   transition: 0.3s;
 }
 @media screen and (max-width: 1000px) {
-  .allwork .competence svg {
+  .allWork .AllLanguage svg {
     margin-top: 25px;
   }
 }
-.allwork .competence svg:hover {
+.allWork .AllLanguage svg:hover {
   fill: #4169E1;
   transform: scale(1.2);
 }
-.allwork .competence svg:active {
+.allWork .AllLanguage svg:active {
   transform: scale(1.5);
 }
-.allwork .description {
+.allWork .description {
   margin: 5% 0 5% 0;
   height: auto;
   width: auto;
@@ -410,47 +383,47 @@ body {
   grid-template-rows: 2fr;
 }
 @media screen and (max-width: 1170px) {
-  .allwork .description {
+  .allWork .description {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (max-width: 600px) {
-  .allwork .description {
+  .allWork .description {
     grid-template-columns: 1fr;
     margin: 50px 0 0 0;
   }
 }
 @media screen and (max-width: 600px) {
-  .allwork .description .descrip {
+  .allWork .description .descrip {
     margin: 50px 0 0 0;
   }
 }
 @media screen and (max-width: 500px) {
-  .allwork .description .aboutme {
+  .allWork .description .aboutme {
     margin-bottom: 50px;
   }
 }
-.allwork .description h2 {
+.allWork .description h2 {
   font-size: 1.8em;
   color: #4169E1;
   text-align: center;
 }
-.allwork .description p {
+.allWork .description p {
   font-size: 1.3em;
   text-align: center;
   padding: 50px 10% 0 10%;
 }
 @media screen and (max-width: 600px) {
-  .allwork .description p {
+  .allWork .description p {
     padding: 0px 25px 25px 25px;
   }
 }
 @media screen and (max-width: 900px) {
-  .allwork .description p {
+  .allWork .description p {
     padding: 0;
   }
 }
-.allwork .description p .link {
+.allWork .description p .link {
   color: #1A3CA3;
 }
 
@@ -462,13 +435,13 @@ body {
   display: flex;
   flex-direction: column;
 }
-.project .titleproject {
+.project .titleProject {
   font-size: 1.8em;
   color: #4169E1;
   text-align: center;
 }
 @media screen and (max-width: 600px) {
-  .project .titleproject {
+  .project .titleProject {
     margin-top: 40px;
   }
 }
@@ -479,13 +452,13 @@ body {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.projects .projects_container {
+.projects .projectsContainer {
   padding: 50px;
   width: auto;
   display: flex;
   justify-content: center;
 }
-.projects .projects_container .project_items {
+.projects .projectsContainer .projectItems {
   margin: 20px 0 0 0;
   width: 300px;
   height: 300px;
@@ -502,7 +475,7 @@ body {
   /* Opera */
   transition: all 1s ease;
 }
-.projects .projects_container .project_items:hover {
+.projects .projectsContainer .projectItems:hover {
   -webkit-transform: scale(1.1);
   /* Safari and Chrome */
   -moz-transform: scale(1.1);
@@ -513,20 +486,20 @@ body {
   /* Opera */
   transform: scale(1.1);
 }
-.projects .projects_container .project_items .imgProject {
+.projects .projectsContainer .projectItems .imgProject {
   width: 100%;
   height: auto;
 }
-.projects .projects_container .project_items .descriptionImg {
+.projects .projectsContainer .projectItems .descriptionImg {
   text-align: center;
 }
 @media screen and (max-width: 600px) {
-  .projects .projects_container .project_items {
+  .projects .projectsContainer .projectItems {
     width: 300px;
     height: 250px;
   }
 }
-.projects .projects_container .project_items .project_title {
+.projects .projectsContainer .projectItems .project_title {
   font-size: 1.3em;
 }
 #abouttt {
@@ -543,32 +516,32 @@ body {
     grid-template-columns: 1fr;
   }
 }
-.contact .contact_title {
+.contact .contactTitle {
   padding-top: 10px;
   color: #4169E1;
   font-size: 1.8em;
   text-align: center;
 }
-.contact .cv_container {
+.contact .cvContainer {
   grid-column: 1/2;
 }
-.contact .mail_container {
+.contact .mailContainer {
   grid-column: 2/3;
 }
 @media screen and (max-width: 800px) {
-  .contact .mail_container {
+  .contact .mailContainer {
     grid-column: 1/2;
   }
 }
 
-.contact_content {
+.contactContent {
   margin: 0 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.contact_content .txt_contact {
+.contactContent .txtContact {
   font-size: 1.3em;
   text-align: center;
   color: #232323;
@@ -594,22 +567,22 @@ footer {
     font-size: 0.8em;
   }
 }
-footer .socialsnetwork {
+footer .socialsNetwork {
   display: flex;
   flex-direction: row;
 }
-footer .socialnetwork {
+footer .socialNetwork {
   text-decoration: none;
   z-index: 33;
 }
 @media screen and (max-width: 600px) {
-  footer .socialnetwork {
+  footer .socialNetwork {
     font-size: 0.8em;
     margin-right: 20px;
   }
 }
 @media screen and (max-width: 1000px) {
-  footer .socialnetwork {
+  footer .socialNetwork {
     padding-right: 0px;
   }
 }

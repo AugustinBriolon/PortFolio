@@ -1,7 +1,7 @@
 // HEADER
 
 
-.nav_list {
+.navList {
     height: 70px;
     padding-top: 25px;
     display: flex;
@@ -10,29 +10,35 @@
     @media screen and (max-width:700px) {
         width: auto;
         height: 100px;
+        flex-direction: column;
     }
 
-    .page_link {
+    .pageLink {
         list-style-type: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
         z-index: 33;
+
         @media screen and (max-width:700px) {
-            flex-direction: column;
             padding-top: 15px;
             justify-content: center;
         }
     }
 
-    .nav_list_item_link {
+    .navListItem {
         @extend %margin;
         font-size: 2em;
         padding: 1rem;
         font-weight: normal;
         text-decoration: none;
+
         @media screen and (max-width:700px) {
             font-size: 1.2em;
+        }
+
+        &:hover {
+            @extend %underline;
         }
     }
 
@@ -42,6 +48,7 @@
         font-weight: normal;
         text-decoration: none;
         z-index: 33;
+
         @media screen and (max-width:700px) {
             font-size: 4em;
         }

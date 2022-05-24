@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
 
-    .titleproject {
+    .titleProject {
         font-size: 1.8em;
         color: $color-third;
         text-align: center;
@@ -22,13 +22,13 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 
-    .projects_container {
+    .projectsContainer {
         padding: 50px;
         width: auto;
         display: flex;
         justify-content: center;
 
-        .project_items {
+        .projectItems {
             margin: 20px 0 0 0; 
             @include size (300px, 300px);
             display: flex;
