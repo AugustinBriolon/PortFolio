@@ -327,9 +327,6 @@ body {
   }
 }
 
-.allWork {
-  padding-top: 20px;
-}
 @media screen and (max-width: 600px) {
   .allWork {
     margin: 0 2px;
