@@ -165,6 +165,18 @@ body {
   transition: 1s cubic-bezier(0.5, 0, 0, 1);
 }
 
+.linkNewP {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #F4F2F3;
+  padding: 10px;
+  border: 1px solid #4169E1;
+  z-index: 99999999999;
+  text-align: center;
+}
+
 /* Layouts
 --------------------------------------------- */
 .navList {

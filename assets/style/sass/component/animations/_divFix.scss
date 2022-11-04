@@ -1,0 +1,11 @@
+.linkNewP {
+  position: fixed;
+  bottom: 0%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  background-color: $color-primary;
+  padding: 10px;
+  border: 1px solid $color-third;
+  z-index: 99999999999;
+  text-align: center;
+}
